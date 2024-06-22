@@ -1,36 +1,23 @@
-name: Report generation
+name: Convert Markdown to PDF
 
 on:
   push:
     branches:
-    - "main"
-    paths: 
-    - "report/**"
-    
+      - main
+
 jobs:
-  Generate:
+  convert:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Create file list
-        id: files_list
-        run: |
-          cd report
-          echo "::set-output name=files::$(printf 'report/%s ' *.md)"
-      - name: Convert with pandoc
-        uses: docker://pandoc/latex:3.2
-        with:
-          args: >-
-            -o report.pdf
-            --citeproc
-            -N
-            --metadata-file=report/metadata.yml
-            --bibliography=report/bibliography.bib
-            --csl=report/ieee.csl
-            --resource-path=report
-            ${{ steps.files_list.outputs.files }}
-      - name: Upload
-        uses: actions/upload-artifact@master
-        with:
-          name: report
-          path: report.pdf
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Convert files
+      run: sh convert_md_to_pdf.sh
+
+    - name: Upload PDF artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: output-pdfs
+        path: output
