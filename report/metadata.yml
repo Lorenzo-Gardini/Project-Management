@@ -27,9 +27,11 @@ header-includes:
   \AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
   ```
 indent: true
+extensions: fontspec
+mainfont: OpenSans
 fontsize: 12pt
 papersize: a4
-toc: true
+toc: false
 from: markdown+raw_attribute+tex_math_dollars+link_attributes+citations
 to: pdf
 reference-section-title: "Bibliografia"
