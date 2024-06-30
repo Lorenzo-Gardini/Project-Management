@@ -17,6 +17,7 @@ header-includes:
   \usepackage{indentfirst}
   \usepackage{float}
   \usepackage{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
   \usepackage{graphicx}
   \floatplacement{figure}{H}
   \usepackage{subfig}
