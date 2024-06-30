@@ -1,0 +1,2 @@
+## Accuracy
+accuratezza calcolata su _numero di polizza_, e in maniera **globale** come media di tutte le accuratezze. Le singole accuratezze per ciascun metadato vengono salvate in un ulteriore **database "ad hoc"** in modo da poter effettuare analisi globali e specifiche per singolo documento (riferimento al documento Databases.pdf). 
