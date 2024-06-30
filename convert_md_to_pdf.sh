@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-#sudo apt install wkhtmltopdf
+sudo apt install wkhtmltopdf
 sudo apt install pandoc
 
 for file in $(find report -type f -name '*.md'); do
