@@ -13,9 +13,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install fontspec
-      run: pip install fontspec
-
     - name: Convert files
       run: sh convert_md_to_pdf.sh
 

@@ -12,7 +12,14 @@ header-includes:
   \usepackage[italian]{babel}
   \usepackage{amsmath}
   \usepackage{textcomp}
-  \setmainfont{Open Sans}
+  \setmainfont{OpenSans}[
+    Path = ./font/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic,
+]
   \usepackage[a4paper, total={17cm, 24cm}]{geometry}
   \usepackage[format=plain,labelfont=bf,up,textfont=normal,up,justification=justified,singlelinecheck=false,skip=0.01\linewidth]{caption}
   \usepackage{indentfirst}
@@ -27,8 +34,6 @@ header-includes:
   \AtBeginEnvironment{tabular}{\setcounter{rowcntr}{0}}
   ```
 indent: true
-extensions: fontspec
-mainfont: OpenSans
 fontsize: 12pt
 papersize: a4
 toc: false
