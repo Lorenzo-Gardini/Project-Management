@@ -1,5 +1,5 @@
 <p style="text-align: right;">
-  <img src="hyperflow_logo.png" alt="Logo" style="width: 120px;"/>
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
 </p>
 
 # POS
