@@ -60,7 +60,7 @@ Il goal consiste nel creare un sistema che permetta di poter, in maniera automat
 Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
 
 | Ordine | Oggetto                 | Ambiente   | Nota aggiuntiva                                                                                           |
-|:------:|:-----------------------:|:----------:|:---------------------------------------------------------------------------------------------------------:|
+|--------|-------------------------|------------|-----------------------------------------------------------------------------------------------------------|
 | 1      | Sviluppo Logica         | Test       | lo sviluppo comprende test sul _batch_ di **train**                                                       |
 | 2      | Sviluppo Infrastruttura | Test       |                                                                                                           |
 | 3      | Performance Test        | Test       | test sulle performance di tempo del sistema                                                               |
