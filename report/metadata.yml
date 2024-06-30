@@ -13,7 +13,7 @@ header-includes:
   \usepackage{amsmath}
   \usepackage{textcomp}
   \setmainfont{OpenSans}[
-    Path = ./font/,
+    Path = /report/font/,
     Extension = .ttf,
     UprightFont = *-Regular,
     BoldFont = *-Bold,
