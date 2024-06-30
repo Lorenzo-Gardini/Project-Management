@@ -12,7 +12,6 @@ header-includes:
   \usepackage[italian]{babel}
   \usepackage{amsmath}
   \usepackage{textcomp}
-  \usepackage[default,scale=0.95]{opensans}
   \usepackage[a4paper, total={17cm, 24cm}]{geometry}
   \usepackage[format=plain,labelfont=bf,up,textfont=normal,up,justification=justified,singlelinecheck=false,skip=0.01\linewidth]{caption}
   \usepackage{indentfirst}
