@@ -113,10 +113,7 @@ blockquote {
 
 hr {
   display: block;
-  height: 2px;
-  border: 0;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #eee;
+  border: 1px solid #333;
   margin: 1em 0;
   padding: 0;
 }
