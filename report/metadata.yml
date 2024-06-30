@@ -16,7 +16,6 @@ header-includes:
   \usepackage[format=plain,labelfont=bf,up,textfont=normal,up,justification=justified,singlelinecheck=false,skip=0.01\linewidth]{caption}
   \usepackage{indentfirst}
   \usepackage{float}
-  \usepackage{helvet}
   \renewcommand{\familydefault}{\sfdefault}
   \usepackage{graphicx}
   \floatplacement{figure}{H}
