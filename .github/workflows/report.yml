@@ -4,13 +4,16 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'report/**.md'
+      - 'report/images/**'
 
 jobs:
   converttopdf:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: report
@@ -18,7 +21,7 @@ jobs:
           images_dir: report/images
           image_import: ./images
           build_html: false
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: docs
           path: pdfs
