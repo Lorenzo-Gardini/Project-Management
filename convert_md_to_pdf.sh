@@ -6,5 +6,5 @@ for file in $(find report -type f -name '*.md'); do
   output_file="${base_filename%.md}.pdf"
   output_dir=$(echo "$base_output_dir" | sed 's/report/output/')
   mkdir -p "$output_dir"
-  docker run --rm --volume "`pwd`:/data" pandoc/latex -t html -c report/white.css --standalone "$file" -o "$output_dir/$output_file" 
+  docker run --rm --volume "`pwd`:/data" pandoc/latex -t html -c report/white.css "$file" -o "$output_dir/$output_file" 
 done
