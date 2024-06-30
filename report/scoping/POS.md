@@ -1,3 +1,7 @@
+<p style="text-align: right;">
+  <img src="hyperflow_logo.png" alt="Logo" style="width: 120px;"/>
+</p>
+
 # POS
 
 ## Titolo Progetto
