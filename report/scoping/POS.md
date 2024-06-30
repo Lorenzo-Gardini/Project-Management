@@ -8,6 +8,7 @@
 
 **APME**, **_"Automated Auto Policy Metadata Extraction"_**
 
+
 ## Descrizione del problema
 
 L'azienda *Specifici* possiede una grande quantità di documenti di **polizze assicurative RCA** in formato **PDF** prodotte dai sui clienti. I dipendenti di *Specifici* le leggono e caricano manualmente le informazioni sul loro portale. Quest'ultimo è collegato a diversi database relazionali _MySQL_ che mantengono tutte le informazioni. Un dipendente **Specifici**[^1] impiega dai 5 ai 10 minuti a documento considerando che deve effettuare le operazioni a mano e che i documenti sono di molte lingue diverse. Da stime calcolate internamente all'azienda il 5% dei file analizzati viene caricato sul portale con almeno un errore. 
