@@ -12,6 +12,20 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      
+    - name: Install font
+      run: |
+        # Create directory for fonts (if it doesn't exist)
+        mkdir -p ~/.local/share/fonts
+        
+        # Download Open Sans font files (example with wget)
+        wget -P ~/.local/share/fonts https://github.com/google/fonts/raw/main/apache/opensans/OpenSans-Regular.ttf
+        wget -P ~/.local/share/fonts https://github.com/google/fonts/raw/main/apache/opensans/OpenSans-Bold.ttf
+        wget -P ~/.local/share/fonts https://github.com/google/fonts/raw/main/apache/opensans/OpenSans-Italic.ttf
+        wget -P ~/.local/share/fonts https://github.com/google/fonts/raw/main/apache/opensans/OpenSans-BoldItalic.ttf
+        
+        # Update font cache
+        fc-cache -f -v
 
     - name: Convert files
       run: sh convert_md_to_pdf.sh
