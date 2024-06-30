@@ -1,9 +1,9 @@
 ---
-title: 'Relazione Project-Management'
+title: ''
 date:
-documentclass: article
+documentclass: minimal
 author: 
-- "Gardini Lorenzo"
+- ""
 header-includes:
 - |
   ```{=latex}
@@ -12,6 +12,7 @@ header-includes:
   \usepackage[italian]{babel}
   \usepackage{amsmath}
   \usepackage{textcomp}
+  \usepackage[default,oldstyle,scale=0.95]{opensans}
   \usepackage[a4paper, total={17cm, 24cm}]{geometry}
   \usepackage[format=plain,labelfont=bf,up,textfont=normal,up,justification=justified,singlelinecheck=false,skip=0.01\linewidth]{caption}
   \usepackage{indentfirst}
