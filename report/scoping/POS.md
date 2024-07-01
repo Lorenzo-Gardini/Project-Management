@@ -40,7 +40,7 @@ Il goal consiste nel creare un sistema che permetta di poter, in maniera automat
 - Il sistema sarà un **servizio _E2E_**[^3] implementato direttamente sulla piattaforma **_AWS_**[^4] del cliente.
 - I **costi** per i test, di tutta la piattaforma e della manutenzione saranno **a carico del cliente**.
 - Il cliente fornirà due _batch_ di documenti PDF che sono stati caricati manualmente e le loro informazioni sono quindi già presenti nel database. Questi documenti vengono inoltre selezionati accuratamente dal cliente in modo che abbiano **più variabilità possibile** e che quindi possano coprire più casistiche. Il primo _batch_, definito di **train**, è composto da circa 500 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica. Per i **_Validation Tests_** verrà utilizzato un _batch_, definito di **validation**, composto da 200 documenti mai visti durante lo sviluppo ma comunque già presenti nel database. Infine per i **_User Tests_** ogni nuovo documento ricevuto dal cliente verrà prima processato dal sistema, poi l'utente effettuerà un controllo manuale tra i dati del documento e i valori estratti calcolando l'accuratezza[^5].
-- Il calcolo dell'accuratezza viene calcolata sulla base dei **singoli metadati** (riferimento al documento Metadata_and_Accuracy.pdf)
+- Il calcolo dell'accuratezza viene calcolata sulla base dei **singoli metadati** (riferimento al documento [metadata_and_accuracy.html](metadata_and_accuracy.html))
 
 
 ## Essentials stackholders
