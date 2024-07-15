@@ -11,9 +11,11 @@ Da questa necessità nasce il progetto **ASTE**, acronimo di **_"Automated Struc
 Di seguito la descrizione dei documenti prodotti durante lo sviluppo del progetto allo stato attuale:
 
 ### Scoping
-- **meetings.pdf** contiene il resoconto dei vari meetings iniziali
-- **POS.pdf** contiene il POS del progetto
-- **RBS.pdf** contiene la proposta del progetto
+- [meetings.html](scoping/meetings.html) contiene il resoconto dei vari **meetings** iniziali
+- [POS.html](scoping/POS.html) contiene il **POS** del progetto
+- [RBS.html](scoping/RBS.html) contiene la proposta del progetto
+- [CoS.html](scoping/CoS.html) contiene le **Condition of Satisfaction**
+
 ### Aggiunte
 
 
