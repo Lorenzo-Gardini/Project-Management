@@ -55,24 +55,6 @@ La validazione, da parte dell'utente, dei dati estratti serve sia per **compensa
 - eventuali **problemi/ritardi** legati all'affidabilità di _AWS_ sono gestiti dal team IT di _Specifici_
 
 
-## Milestones
-Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
-
-| Ordine | Oggetto                      | Ambiente   | Nota aggiuntiva                                                                                           |
-|:------:|:----------------------------:|:----------:|-----------------------------------------------------------------------------------------------------------|
-| 1      | Sviluppo logica              | Test       | lo sviluppo comprende test sul _batch_ di **train**                                                       |
-| 2      | Superamento Validation Test  | Test       | test sul _batch_ di **validation**                                                                        |
-| 3      | Sviluppo infrastruttura      | Test       | su AWS industrializzando la parte di logica                                                               |
-| 3*     | Sviluppo e test portali web  | Test       | sviluppo portale nuovo e cambio del precedente                                                            | 
-| 4      | Superamento Performance test | Test       | test sulle performance di tempo del sistema                                                               |
-| 4**    | Superamento test portali web | Produzione | verifica del funzionamento dei portali web in ambiente di produzione                                      |
-| 5      | Superamento Test E2E         | Produzione | verifica del funzionamento del sistema in ambiente di produzione                                          |
-| 6      | Superamento Stress Test E2E  | Produzione | verifica del funzionamento del sistema con **utilizzo intensivo**                                         |
-| 7      | Superamento Live Test        | Produzione | analisi effettuate con **ricorrenza settimanale** sui documenti raccolti                                  |
-
-\* lo sviluppo dei portali web può iniziare parallallelamente a quello dell'infrastruttura, ma ne è dipendente
-\** i test per i portali web possono essere effettuati parallelamente ai _Performance test_
-
 [^1]: all'interno dei vari documenti vengono definiti con _dipendenti Specifici_ le persone addette ad esaminare e caricare i dati manualmente. Vengono definiti _clienti_ i clienti di _Specifici_, chi compila e invia il documento del sinistro
 [^2]: flusso automatizzato che raccoglie, trasforma e carica i dati in un database
 [^3]: **Confluence** è uno strumento per la collaborazione in team. Permette di creare, condividere e modificare contenuti (documenti, note, idee) in modo collaborativo. Offre funzionalità di organizzazione, ricerca e integrazione con altri strumenti aziendali. Ideale per migliorare la collaborazione, aumentare la produttività e gestire le informazioni in modo efficace

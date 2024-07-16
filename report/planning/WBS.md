@@ -132,3 +132,22 @@
    - spiegazione delle scelte di design e le implementazioni adottate
    - guide per l'utente per i portali web di ingestione automatica e del portale interno
       - screenshot e illustrazioni per la comprensione
+
+
+## Milestones
+Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
+
+| Ordine | Oggetto                      | Ambiente   | Nota aggiuntiva                                                                                           |
+|:------:|:----------------------------:|:----------:|-----------------------------------------------------------------------------------------------------------|
+| 1      | Sviluppo logica              | Test       | lo sviluppo comprende test sul _batch_ di **train**                                                       |
+| 2      | Superamento Validation Test  | Test       | test sul _batch_ di **validation**                                                                        |
+| 3      | Sviluppo infrastruttura      | Test       | su AWS industrializzando la parte di logica                                                               |
+| 3*     | Sviluppo e test portali web  | Test       | sviluppo portale nuovo e cambio del precedente                                                            | 
+| 4      | Superamento Performance test | Test       | test sulle performance di tempo del sistema                                                               |
+| 4**    | Superamento test portali web | Produzione | verifica del funzionamento dei portali web in ambiente di produzione                                      |
+| 5      | Superamento Test E2E         | Produzione | verifica del funzionamento del sistema in ambiente di produzione                                          |
+| 6      | Superamento Stress Test E2E  | Produzione | verifica del funzionamento del sistema con **utilizzo intensivo**                                         |
+| 7      | Superamento Live Test        | Produzione | analisi effettuate con **ricorrenza settimanale** sui documenti raccolti                                  |
+
+\* lo sviluppo dei portali web può iniziare parallallelamente a quello dell'infrastruttura, ma ne è dipendente
+\** i test per i portali web possono essere effettuati parallelamente ai _Performance test_
