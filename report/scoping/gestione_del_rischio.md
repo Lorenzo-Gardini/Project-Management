@@ -4,7 +4,6 @@
 <style>
 th, td{
     text-align: center;
-    vertical-align: middle;
 }
 .low{
     background-color: #77DD77;
