@@ -1,0 +1,74 @@
+<p style="text-align: right;">
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
+</p>
+
+## Titolo Progetto
+**ARME**, _"**A**utomated **A**ccident **R**eport **M**etadata **E**xtraction"_
+
+## Executive Summary
+
+**ARME** è un sistema automatico di estazione metadati da documenti _CAI_, in formato PNG, JPG o PDF e compilati a mano o digitalmente. Una **pipeline d'ingestion** automatica, estrae da ciascun documento _CAI_ i metadati necessari. Questi dati vengono salvati in un database temporaneo di **pre-validazione** e mostrati con degli indicatori che sottolineano lo status per ogni metadato estratto. L'utente può revisionare, modificare e infine confermare i metadati, modificati e non, che vengono salvati nel database finale di **post-validazione**. I dipendenti _Specifici_, successivamente all'estrazione, possono effettuare **ricercare, visualizzare e modificare**, i metadati dei documenti estratti. 
+
+La validazione, da parte dell'utente, dei dati estratti serve sia per **compensare eventuali errori** di estazione commessi dal sistema sia per rendere l'utente più **consapevole e responsabile** della qualità dei dati che stanno per essere caricati. 
+
+Il tasso di soddisfazione dei clienti viene misurato per la durata di 1 anno utilizzando un **popup** che viene mostrato al termine di ciascuna esecuzione.
+
+## Background
+L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazione amichevole di incidente (CAI)** in formato **PDF** prodotte dai sui clienti. I dipendenti di _Specifici_ le leggono e caricano manualmente le informazioni sul loro portale. Quest'ultimo è collegato a diversi database relazionali _MySQL_ che mantengono tutte le informazioni. Un **dipendente _Specifici_**[^1] impiega circa 7 minuti. Da stime calcolate internamente l'8% dei file analizzati viene caricato sul portale con almeno un errore. Vengono ricevuti in media 30 documenti al giorno, che richiedono circa 3.5 ore di lavoro totali.
+
+## Obiettivi
+- **implementazione della logica** di estrazione
+- **implementazione dell'infrastruttura** su ambiente cloud _AWS_
+- **integrazione con database** preesistenti
+- **cambio front-end** per la modalità _ingestion_
+- **aggiunta nuovo portale interno** per dipendenti _Specifici_ per la modalità _manuale_
+- **scrittura documentazione**, sia del codice sviluppato che del funzionamento generale dell'applicativo, utilizzando **_Confluence_**[^1]
+- **formazione** per i dipendenti _Specifici_ sul funzionamento del sistema
+
+## Architettura sitema
+#### Architettura pipeline d'ingestion
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/ingestion_architecture.png?raw=true" alt="Ingestion Pipeline" style="max-width: 700px; display:block; margin: 0 auto"/>
+
+Una volta che il documento è stato caricato sul _bucket S3_ dall'utente in automatico viene triggerata la pipeline d'_ingestion_ automatica che estrae i metadati e li salva nel database _Aurora_ di pre-validazione. Viene messo un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata.
+
+L'utente può confermare i dati estratti/modificati che vengono salvati sul database di post-validazione.
+
+Il dipendente specifici può interrogare direttamente il database di post-validazione in modo da otterenere le infomazioni estratte da un documento.
+
+## Test
+#### 1. Logica
+
+_Specifici_ fornirà due _batch_ di documenti, in formati diversi, che sono stati caricati manualmente e le loro informazioni già presenti nel database. Vengono selezionati in modo che ci sia **alta variabilità** e che quindi vengano ricoperte più casistiche possibili. Il primo _batch_, definito di **train**, è composto da circa 20_000 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica. Per i **_Validation Tests_** verrà utilizzato un _batch_, definito di **validation**, composto da 1500 documenti mai visti durante lo sviluppo ma comunque già presenti nel database. 
+
+I test che verranno implementati saranno di tipo _Unit Test_ e _Acceptance Test_.
+
+#### 2. Infrastruttura
+
+Per ogni componente vengono effettuati _Unit Test_ e _Integration Test_. Modifiche effettuate a posteriori della creazione dell'intera _pipeline_ comportano un ciclo completo di test di quest'ultima
+
+Un ciclo di test dell'intera _pipeline_ è composto da _Integration Test_, _Acceptance Test_, _Stress Test_ e _Performance Test_.
+
+#### 3. Portali web
+
+La logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_.
+
+Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_.
+
+Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_. 
+
+#### 4. Live test
+
+Analisi effettuate con **frequenza settimanale** sui documenti raccolti. Queste iterazioni vengono protratte per la durata di 4 mesi dalla messa in produzione del sistema.
+
+## Milestones
+Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
+1. Completamento della logica
+2. Completamento infrastruttura
+3. Completamento portali web
+4. Superamento test in ambiente di produzione
+5. Superamento _Live Test_
+
+Il completamento di una milestone comprende sempre il superamento di tutti i test con i batch di _train_ e _validation_.
+
+
+[^1]: **Confluence** è uno strumento per la collaborazione in team. Permette di creare, condividere e modificare contenuti (documenti, note, idee) in modo collaborativo. Offre funzionalità di organizzazione, ricerca e integrazione con altri strumenti aziendali. Ideale per migliorare la collaborazione, aumentare la produttività e gestire le informazioni in modo efficace

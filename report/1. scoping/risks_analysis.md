@@ -1,6 +1,7 @@
 <p style="text-align: right;">
   <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
 </p>
+
 <style>
 th, td{
     text-align: center;
@@ -51,6 +52,15 @@ th, td{
         <td>alto(4)</td>
         <td><span class="medium">12</span></td>
         <td><strong>Performance Tests</strong> per monitorare i tempi. <strong>Ottimizzazioni</strong> sul codice. <strong>Provisioned Concurrency</strong></td>
+    </tr>
+        <tr>
+        <td><strong>Mancanza di dati</strong></td>
+        <td>Nel database di <em>Specifici</em> non sono presenti <strong>abbastanza dati</strong> per i modelli di ML</td>
+        <td>Tecnico</td>
+        <td>bassa(2)</td>
+        <td>medio(3)</td>
+        <td><span class="low">6</span></td>
+        <td><strong>Data augmentation</strong> per applicare diverse trasformazioni sui documenti creandone di nuovi. </td>
     </tr>
     <tr>
         <td><strong>Scalabilità</strong></td>
@@ -198,5 +208,5 @@ th, td{
         <td>Introdurre <strong>controlli continui</strong> durante la realizzazione della soluzione mirati a mantenere alta la qualità della stessa</td>
     </tr>
 </table>
-
-<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/risk_graphs.png?raw=true" alt="Risk Graphs"/>
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/risk_table.png?raw=true" alt="Risk Table" style="max-width: 700px; display:block; margin: 0 auto"/>
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/risk_cake.png?raw=true" alt="Risk Cake" style="max-width: 700px; display:block; margin: 0 auto"/>

@@ -4,9 +4,10 @@
 
 # Test
 
-- il cliente fornirà due _batch_ di documenti PDF che sono stati caricati manualmente e le loro informazioni sono quindi già presenti nel database. Questi documenti vengono inoltre selezionati dal cliente in modo che abbiano **più variabilità possibile** e che quindi possano coprire più casistiche. Il primo _batch_, definito di **train**, è composto da circa 20_000 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica. Per i **_Validation Tests_** verrà utilizzato un _batch_, definito di **validation**, composto da 1500 documenti mai visti durante lo sviluppo ma comunque già presenti nel database. Infine per i **_Live Tests_** vengono creati dei _batch_ con i documenti raccolti e ispezionati a **frequenza settimanale**. Queste iterazioni vengono per la durata di 2 mesi dalla messa in produzione del sistema.
+Il cliente fornirà due _batch_ di documenti PDF che sono stati caricati manualmente e le loro informazioni sono quindi già presenti nel database. Questi documenti vengono inoltre selezionati dal cliente in modo che abbiano **più variabilità possibile** e che quindi possano coprire più casistiche. Il primo _batch_, definito di **train**, è composto da circa 20_000 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica. Per i **_Validation Tests_** verrà utilizzato un _batch_, definito di **validation**, composto da 1500 documenti mai visti durante lo sviluppo ma comunque già presenti nel database. Infine per i **_Live Tests_** vengono creati dei _batch_ con i documenti raccolti e ispezionati a **frequenza settimanale**. Queste iterazioni vengono per la durata di 2 mesi dalla messa in produzione del sistema.
 
 ### Test Logica
++ tutti i test che mancano guarda wbs
 <table>
    <thead>
       <tr>
@@ -20,20 +21,68 @@
     </thead>
     <tbody>
       <tr>
-         <td>Logica OCR</td>
+         <td>Conversione Formato</td>
          <td>Unit Test, Acceptance Test</td>
          <td>Ogni commit</td>
          <td>Pytest</td>
          <td>L1</td>
-         <td>L3</td>
+         <td>L9</td>
       </tr>
       <tr>
-         <td>Logica NLP</td>
+         <td>Controllo Risoluzione</td>
          <td>Unit Test, Acceptance Test</td>
          <td>Ogni commit</td>
          <td>Pytest</td>
          <td>L2</td>
+         <td>L10</td>
+      </tr>
+      <tr>
+         <td>Preprocessing Immagine</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
+         <td>L3</td>
+         <td>L11</td>
+      </tr>
+      <tr>
+         <td>Modulo Textract</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
          <td>L4</td>
+         <td>L12</td>
+      </tr>
+      <tr>
+         <td>Modulo OCR</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
+         <td>L5</td>
+         <td>L13</td>
+      </tr>
+      <tr>
+         <td>Modulo NER</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
+         <td>L6</td>
+         <td>L14</td>
+      </tr>
+      <tr>
+         <td>Modulo Post-processing</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
+         <td>L7</td>
+         <td>L15</td>
+      </tr>
+      <tr>
+         <td>Modulo Generazione Status</td>
+         <td>Unit Test, Acceptance Test</td>
+         <td>Ogni commit</td>
+         <td>Pytest</td>
+         <td>L8</td>
+         <td>L16</td>
       </tr>
      </tbody>
 </table>
@@ -119,6 +168,7 @@
 </table>
 
 ### Test Front-End
++ test usabilità
 #### Vecchio portale
 <table>
    <thead>
@@ -135,7 +185,7 @@
       <tr>
          <td>Caricamento documento portale web</td>
          <td>Integration Test, Unit Test</td>
-         <td>Ogni build</td>
+         <td>Ogni commit</td>
          <td>Selenium, Jest</td>
          <td>FO1</td>
          <td>FO8</td>
@@ -143,15 +193,15 @@
       <tr>
          <td>Visualizzazione dati estratti</td>
          <td>Integration Test, Unit Test</td>
-         <td>Ogni build</td>
+         <td>Ogni deploy</td>
          <td>Selenium, Jest</td>
          <td>FO2</td>
          <td>FO9</td>
       </tr>
       <tr>
          <td>Visualizzazione indicatore accuratezza</td>
-         <td>Unit Test</td>
-         <td>Ogni commit</td>
+         <td>Integration Test, Unit Test</td>
+         <td>Ogni deploy</td>
          <td>Jest</td>
          <td>FO3</td>
          <td>FO10</td>
@@ -184,6 +234,14 @@
          <td>Invio feedback del popup al server</td>
          <td>Unit Test, Integration Test</td>
          <td>Ogni build</td>
+         <td>Selenium, Jest</td>
+         <td>FO7</td>
+         <td>FO14</td>
+      </tr>
+      <tr>
+         <td>Navigabilità e utilizzo</td>
+         <td>Usability</td>
+         <td>Ogni </td>
          <td>Selenium, Jest</td>
          <td>FO7</td>
          <td>FO14</td>

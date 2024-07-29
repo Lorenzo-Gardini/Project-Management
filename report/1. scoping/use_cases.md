@@ -1,3 +1,7 @@
+<p style="text-align: right;">
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
+</p>
+
 ## Use Cases
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/use_cases.png?raw=true" alt="Use Cases" style="max-width: 700px; display:block; margin: 0 auto"/>
