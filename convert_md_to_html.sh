@@ -10,7 +10,7 @@ for file in $(find report -type f); do
   base_output_dir=$(dirname "$file")
   
   # Determine the output directory by replacing 'report' with 'output'
-  output_dir=$(echo "$base_output_dir" | sed 's|report|output|')
+  output_dir=$(echo "$base_output_dir" | sed 's/report/output/')
 
   # Check if the file is a Markdown file
   if [[ "$file" == *.md ]]; then
