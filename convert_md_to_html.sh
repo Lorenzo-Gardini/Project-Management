@@ -13,7 +13,7 @@ for file in $(find report -type f); do
   mkdir -p "$output_dir"
 
   # Check if the file is a Markdown file
-  if [[ "$file" == *.md ]]; then
+  if [ "${file##*.}" = "md" ]; then
     echo "Converting $file"
     # Define the output file name with .html extension
     output_file="${base_filename%.md}.html"    
