@@ -48,6 +48,7 @@ Discussione sulle modalità di sviluppo del sistema, sui rischi e sui possibili 
 
 #### 3. Secondo meeting 09/04/2024
 **Partecipanti**
+
 - **HyperFlow**: 
   - Theoden (Project Manager)
   - Faramir (Senior Data Scientist) 
@@ -82,6 +83,7 @@ Theoden invia i documenti prodotti ai nuovi componenti del team, che avranno il 
 
 #### 4. Meeting Interno 13/05/2024
 **Partecipanti**
+
 - Theoden
 - Faramir
 - Gimli
@@ -114,6 +116,7 @@ Inoltre si è introdotto l'argomento test per capire come effettuare i test sull
 #### 1. Meeting Interno 15/05/2024 
 
 **Partecipanti**
+
 - **gruppo 1**:
   - Faramir
   - Frodo
@@ -139,6 +142,7 @@ Le parti sviluppate da ogni componente vengono unite da Theoden nei vari documen
 
 #### 2. Meeting Interno 20/05/2024
 **Partecipanti**
+
 - Theoden
 - Faramir
 - Gimli

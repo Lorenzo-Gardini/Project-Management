@@ -1,7 +1,7 @@
 
 # Work Breakdown Structure (WBS)
 
-N.B. ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più livelli.
+Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più livelli.
 
 1. **Logica**
    - gestione formato
