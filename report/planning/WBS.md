@@ -62,7 +62,7 @@ Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più liv
    - 3.18 validazione infrastruttura ambiente di produzione
    
 4. **Documentazione**
-   - documentazione del codice
+   - documentazione del codice usando _Sphinx_
      - 4.1 redazione documentazione modulo di conversione formato
      - 4.2 redazione documentazione modulo di controllo risoluzione
      - 4.3 redazione documentazione modulo di preprocessing
@@ -72,10 +72,10 @@ Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più liv
      - 4.7 redazione documentazione modulo di post-processing
      - 4.8 redazione documentazione modulo generazione status metadati
    
-   - guida per l'utente su Confluence
+   - guida per l'utente su _Confluence_
      - 4.9 scrittura guida
      - 4.10 revisione e aggiornamento contenuti
-     - 4.11 pubblicazione guida su Confluence
+     - 4.11 pubblicazione guida su _Confluence_
      
 
 5. **Formazione**

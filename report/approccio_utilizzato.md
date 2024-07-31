@@ -8,19 +8,21 @@ L'azienda _Specifici_ è da anni cliente di _HyperFlow_ che svolge il ruolo di a
 
 _HyperFlow_ ha già sviluppato per _Specifici_ altri sistemi di estrazione dati da documenti (principalmente Excel e CSV) su piattaforma _AWS_.
 
+La la proposta di progetto è stata avanzata da _Specifici_.
+
 
 ## Scoping
-In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team leader che il ruolo di facilitatore mentre Faramir, Senior Data Scientist, di tecnografo.
+In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team leader che il ruolo di facilitatore mentre Faramir, Senior Data Scientist, di tecnografo. Tutti i meetings vengono effettuati in call su _Teams_.
 
 #### 1. Primo meeting 03/04/2024
 
 **Partecipanti**
-- **HyperFlow**: 
+- **HyperFlow** 
   - Theoden (Project Manager)
   - Faramir (Senior Data Scientist)
   - Gimli (Senior Cloud Architect)
   - Gandalf (Senior Full Stack Developer)
-- **Specifici**: 
+- **Specifici**
   - Sauron (Business Unit Manager)
   - Angmar (IT Manager)
   - Peregrino Tuc (Project Manager)
@@ -49,12 +51,12 @@ Discussione sulle modalità di sviluppo del sistema, sui rischi e sui possibili 
 #### 3. Secondo meeting 09/04/2024
 **Partecipanti**
 
-- **HyperFlow**: 
+- **HyperFlow**
   - Theoden (Project Manager)
   - Faramir (Senior Data Scientist) 
   - Gimli (Senior Cloud Architect)
   - Gandalf (Senior Full Stack Developer)
-- **Specifici**: 
+- **Specifici**
   - Angmar (IT Manager)
   - Peregrino Tuc (Project Manager)
 
@@ -117,11 +119,11 @@ Inoltre si è introdotto l'argomento test per capire come effettuare i test sull
 
 **Partecipanti**
 
-- **gruppo 1**:
+- **gruppo 1**
   - Faramir
   - Frodo
   - Eowyn
-- **gruppo 2**:
+- **gruppo 2**
   - Gimli
   - Sam
   - Bilbo
@@ -129,16 +131,16 @@ Inoltre si è introdotto l'argomento test per capire come effettuare i test sull
   - Gandalf 
   
 **Contenuto del meeting**
-Vengono effettuati due meeting separati in modo da sviluppare per gruppi il [WBS](planning/WBS.html) e successivamente il [PND](planning/PND.xlsx) e i [Test](planning/test.html).
+Vengono effettuati due meeting separati in modo da sviluppare per gruppi il [WBS](planning/WBS.html) e successivamente il [PND](planning/PND.xlsx) e [Modalità Test](planning/test.html).
 
 La scelta di task, dipendenze e durate è effettuata in ciascun gruppo: il collega senior effettua una proposta che poi viene discussa con gli altri colleghi ma l'ultima parola spetta comunque a lui.
 Nel [PND](planning/PND.html) vengono definiti direttamente le relazioni tra _task_ e la loro durata.
 
 **Materiale prodotto a fronte del meeting e condiviso con Theoden**
-I [WBS](planning/WBS.html), [PND](planning/PND.html) e [Test](planning/test.html) divisi per gruppi.
+I [WBS](planning/WBS.html), [PND](planning/PND.html) e [Modalità Test](planning/test.html) divisi per gruppi.
 
 ##### Completamento documenti
-Le parti sviluppate da ogni componente vengono unite da Theoden nei vari documenti documento. Inoltre scrive una bozza del [Project Proposal](planning/project_proposal.html) e del [Project Scheduling](planning/project_scheduling.html). Tutto il material prodotto viene inviato ai membri del team in modo che possa essere revisionanto, commentato ed aggiornato successivamente.
+Le parti sviluppate da ogni componente vengono unite da Theoden in un singolo documento per tipologia. Inoltre scrive una bozza del [Project Proposal](planning/project_proposal.html) e del [Project Scheduling](planning/project_scheduling.html). Tutto il material prodotto viene inviato ai membri del team in modo che possa essere revisionanto, commentato ed aggiornato successivamente.
 
 #### 2. Meeting Interno 20/05/2024
 **Partecipanti**
@@ -151,9 +153,12 @@ Le parti sviluppate da ogni componente vengono unite da Theoden nei vari documen
 - Sam
 - Bilbo
 - Eowyn
+
+**Contenuto del meeting**
+Vengono revisionati i file prodotti e vengono completati. 
   
 **Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-[WBS](planning/WBS.html), [PND](planning/PND.html), [Project Proposal](planning/project_propostal.htmls) e [Project Scheduling](planning/project_scheduling.html)
+[WBS](planning/WBS.html), [PND](planning/PND.html), [Modalità Test](planning/test.html), [Project Proposal](planning/project_propostal.htmls) e [Project Scheduling](planning/project_scheduling.html)
 
 ### Aggiunte
 

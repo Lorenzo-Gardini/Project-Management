@@ -27,38 +27,19 @@ L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazi
 
 ## Architettura sitema
 #### Architettura pipeline d'ingestion
-<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/ingestion_architecture.png?raw=true" alt="Ingestion Pipeline" style="max-width: 700px; display:block; margin: 0 auto"/>
+
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_1.jpg?raw=true" alt="Ingestion Pipeline" style="max-width: 700px; display:block; margin: 0 auto"/>
+
 
 Una volta che il documento è stato caricato sul _bucket S3_ dall'utente in automatico viene triggerata la pipeline d'_ingestion_ automatica che estrae i metadati e li salva nel database _Aurora_ di pre-validazione. Viene messo un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata.
 
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_2.jpg?raw=true" alt="Validation" style="max-width: 500px; display:block; margin: 0 auto"/>
+
 L'utente può confermare i dati estratti/modificati che vengono salvati sul database di post-validazione.
 
+<img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_3.jpg?raw=true" alt="Specifici portal" style="max-width: 500px; display:block; margin: 0 auto"/>
+
 Il dipendente specifici può interrogare direttamente il database di post-validazione in modo da otterenere le infomazioni estratte da un documento.
-
-## Test
-#### 1. Logica
-
-_Specifici_ fornirà due _batch_ di documenti, in formati diversi, che sono stati caricati manualmente e le loro informazioni già presenti nel database. Vengono selezionati in modo che ci sia **alta variabilità** e che quindi vengano ricoperte più casistiche possibili. Il primo _batch_, definito di **train**, è composto da circa 20_000 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica. Per i **_Validation Tests_** verrà utilizzato un _batch_, definito di **validation**, composto da 1500 documenti mai visti durante lo sviluppo ma comunque già presenti nel database. 
-
-I test che verranno implementati saranno di tipo _Unit Test_ e _Acceptance Test_.
-
-#### 2. Infrastruttura
-
-Per ogni componente vengono effettuati _Unit Test_ e _Integration Test_. Modifiche effettuate a posteriori della creazione dell'intera _pipeline_ comportano un ciclo completo di test di quest'ultima
-
-Un ciclo di test dell'intera _pipeline_ è composto da _Integration Test_, _Acceptance Test_, _Stress Test_ e _Performance Test_.
-
-#### 3. Portali web
-
-La logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_.
-
-Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_.
-
-Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_. 
-
-#### 4. Live test
-
-Analisi effettuate con **frequenza settimanale** sui documenti raccolti. Queste iterazioni vengono protratte per la durata di 4 mesi dalla messa in produzione del sistema.
 
 ## Milestones
 Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
