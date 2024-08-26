@@ -3,29 +3,36 @@
 </p>
 
 ## Test
-### Logica
 
-Per il calcolo dell'accuratezza _Specifici_ fornirà due _batch_ di documenti, in formati diversi, che sono stati caricati manualmente e le loro informazioni già presenti nel database. Vengono selezionati in modo che ci sia **alta variabilità** e che quindi vengano ricoperte più casistiche possibili. 
+### Approccio utilizzato
 
-- _batch_ di **train**: è composto da circa 20_000 documenti che verranno utilizzati come _true labels_, durante la fase di sviluppo, per poter calcolare **l'accuratezza** dell'estrazione automatica
--  _batch_ di **validation**: è composto da 1500 documenti mai visti durante lo sviluppo ma comunque già presenti nel database e che verranno utilizzati per i **_Validation Tests_**.
-  
-Ogni componente di logica viene testato con _Unit Test_ e _Acceptance Test_.
+Per i test vengono dati a disposizione di _HyperFLow_ gli accessi ai vecchi database. In totale sono stati selezionati 60_000 documenti.
 
-### Infrastruttura
+Per le prime fasi di sviluppo di ciascun componente non vengono usati tutti e 60_000 documenti ma viene creato un _batch_ di 1_000 documenti rappresentativi con alta variabilità.
 
-Per ogni componente vengono effettuati _Unit Test_ e _Integration Test_. Modifiche effettuate a posteriori della creazione dell'intera _pipeline_ comportano un ciclo completo di test di quest'ultima.
+Quando i test di quel componente vengono superati dai documenti del batch allora vengono effettuati su tutti e 60_000 i documenti. Successivamente, si adotta il seguente approccio:
 
-Un ciclo di test dell'intera _pipeline_ è composto da _Integration Test_, _Acceptance Test_, _Stress Test_ e _Performance Test_.
+1. si selezionano i documenti problematici
+2. si effettuano le modifiche
+3. si testano solamente i documenti selezionati
+4. si testano tutti i file per vedere se sono state introdotte delle regressioni
+5. nel caso ci siano ancora errori si ripete il punto 1., in caso contrario si considera che quello specifico componente abbia superato tutti i test.
 
-### Portali web
+Questo approccio viene utilizzato per tutti in componenti in logica, infrastruttura e portali web
 
-La logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_.
+### Tipologie di test
 
-Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_.
+- **logica**: per ogni componente vengono effettuati test di tipo _Unit Test_, _Validation Test_, _Performance Test_ e _Acceptance Test_
+- **infrastruttura**: per ogni componente vengono effettuati _Unit Test_ e _Integration Test_. Modifiche effettuate a posteriori della creazione dell'intera _pipeline_ comportano un ciclo completo di test di quest'ultima. Un ciclo di test dell'intera _pipeline_ è composto da _Integration Test_, _Acceptance Test_, _Stress Test_ e _Performance Test_
+- **portali web**: la logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_. Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_. Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_. 
 
-Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_. 
 
-### Live test
+### Data Fixture
 
-Analisi effettuate con **frequenza settimanale** sui documenti raccolti e controllando i log del sistema. Queste iterazioni vengono protratte per la durata di 6 mesi dalla messa in produzione del sistema.
+Per i test vengono utilizzati delle _fixture_[^1]. Come vantaggio si ha:
+
+- **velocità**: si riduce il tempo di esecuzione dei test evitando chiamate ridondanti
+- **affidabilità**: i test vengano eseguiti sempre nelle stesse condizioni, evitando risultati imprevedibili dovuti a variazioni nei dati di input
+- **manutenibilità**: test più semplici, è importante solo la logica del test stesso
+
+[^1]: Una _fixture_ è un oggetto o un set di dati che viene creato una volta all'inizio di un test o di un gruppo di test e poi riutilizzato multiple volte. Serve a isolare i test, a renderli più veloci e a garantire che le condizioni iniziali siano sempre le stesse.

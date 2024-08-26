@@ -48,7 +48,6 @@ Sono state decise le seguenti _milestones_ che devono essere raggiunte nel segue
 2. **Completamento infrastruttura**
 3. **Completamento portali web**
 4. **Superamento test in ambiente di produzione**
-5. **Superamento _Live Test_**
 
 Il completamento di una milestone comprende sempre il superamento di tutti i test con i batch di _train_ e _validation_.
 

@@ -1,7 +1,12 @@
 
+<p style="text-align: right;">
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
+</p>
+
 # Work Breakdown Structure (WBS)
 
 Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più livelli.
+Si precisa che un requisito è definito come **completato** quando sono stati superati i relativi **test** ed è stata redatta la relativa **documentazione**.
 
 1. **Logica**
    - gestione formato
@@ -19,7 +24,7 @@ Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più liv
    
 2. **Infrastruttura**
    - creazione database
-     - 2.1 creazione bucket S3 per i documenti caricati dai clienti
+     - 2.1 creazione bucket S3
      - 2.2 creazione database Aurora (pre-validazione, post-validazione e per i feedback dei clienti)
    - sviluppo microservizi
      - 2.3 creazione Lambda Function Start
@@ -77,7 +82,6 @@ Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più liv
      - 4.10 revisione e aggiornamento contenuti
      - 4.11 pubblicazione guida su _Confluence_
      
-
 5. **Formazione**
    - 5.1 Selezione formatori interni
    - 5.2 Definizione modalità  di formazione (in presenza,  online)

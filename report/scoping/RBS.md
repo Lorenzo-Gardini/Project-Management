@@ -26,7 +26,6 @@ Si precisa che un requisito è definito come **completato** quando sono stati su
    - 3.4 rilascio in produzione
    - 3.5 validazione infrastruttura ambiente di produzione
    
-
 4. **Documentazione**
    - 4.1 documentazione del codice
    - 4.2 guida per l'utente su Confluence
@@ -37,4 +36,3 @@ Si precisa che un requisito è definito come **completato** quando sono stati su
    - 5.3 Sviluppo materiali didattici
    - 5.4 Pianificazione calendario formativo e invio comunicazioni ai partecipanti
    - 5.5 Esecuzione formazione
-
