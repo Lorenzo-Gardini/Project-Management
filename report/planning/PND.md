@@ -14,11 +14,11 @@ Nel [file](PND.xlsx) vengono mostrate tutte le attività, il loro tempo di esecu
 Viene evidenziato di rosso il percorso critico.
 
 <p style="text-align: center;">
-  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_no_contingency.png?raw=true" alt="PND no contingency" style="max-width: 400px;"/>
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_no_contingency.png?raw=true" alt="PND no contingency" style="max-width: 500px;"/>
 </p>
 
 ### Con contingency
 
 <p style="text-align: center;">
-  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_with_contingency.png?raw=true" alt="PND with contingency" style="max-width: 400px;"/>
+  <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_with_contingency.png?raw=true" alt="PND with contingency" style="max-width: 500px;"/>
 </p>
