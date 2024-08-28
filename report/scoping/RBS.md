@@ -2,9 +2,9 @@
   <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/hyperflow_logo.png?raw=true" alt="Logo" style="width: 150px;"/>
 </p>
 
-# RBS
+# Requirements Breakdown Structure
 
-Si precisa che un requisito è definito come **completato** quando sono stati superati i relativi **test** ed è stata redatta la relativa **documentazione**.
+**DoD**: un requisito è definito come **completato** quando sono stati superati i relativi **test** ed è stata redatta la relativa **documentazione**.
 
 1. **Logica**
    - 1.1 gestione formato

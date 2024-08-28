@@ -14,41 +14,142 @@ La la proposta di progetto è stata avanzata da _Specifici_.
 ## Scoping
 In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team leader che il ruolo di facilitatore mentre Faramir, Senior Data Scientist, di tecnografo. Tutti i meetings vengono effettuati in call su _Teams_.
 
-#### 1. Primo meeting 03/04/2023
+### Ricezione della Request for Proposal da parte di Specifici 04/09/2023
 
-**Partecipanti**
-- **HyperFlow** 
-  - Theoden (Project Manager)
-  - Faramir (Senior Data Scientist)
-  - Gimli (Senior Cloud Engineer)
-  - Gandalf (Senior Full Stack Developer)
-- **Specifici**
-  - Sauron (Business Unit Manager)
-  - Angmar (IT Manager)
-  - Peregrino Tuc (Project Manager)
+**Riceventi**:
 
-**Contenuto del meeting**
-Nel meeting si è discusso della necessità di _Specifici_, dello stato corrente e di alcune _CoS_. Viene inoltre introdotto il tema dei test, di come devono essere svolti e come recuperare i dati per i test della logica.
-
-**Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-Bozza di [POS](scoping/POS.html), [COS](scoping/CoS.html) e [Test](planning/test.html)
-
-
-#### 2. Meeting Interno 08/04/2023
-**Partecipanti**
 - Theoden (Project Manager)
 - Faramir (Senior Data Scientist)
 - Gimli (Senior Cloud Engineer)
 - Gandalf (Senior Full Stack Developer)
+- Eru Ilúvatar (Partner)
+- Tom Bombadil (BU Manager)
+
+**Dettagli**:
+
+- ricezione dell'RFP: l'azienda _Specifici_ invia una RFP che include gli obiettivi generali, requisiti, e vincoli.
+Analisi preliminare: Revisione delle esigenze di A per preparare una risposta preliminare.
+
+Ogni interessato effettua autonomamente un'analisi dell'RFP.
+
+### Meeting di inizio progetto - interno 06/09/2023
+
+**Partecipanti**:
+
+- Theoden (Project Manager)
+- Faramir (Senior Data Scientist)
+- Gimli (Senior Cloud Engineer)
+- Gandalf (Senior Full Stack Developer)
+- Eru Ilúvatar (Partner)
+- Tom Bombadil (BU Manager)
+
+**Argomenti trattati**:
+
+- **revisione dell'RFP**
+- **analisi preliminare del progetto**: valutazione della fattibilità tecnica e delle risorse necessarie
+- **definizione preliminare delle COS**
+- **SWOT Analysis**: analisi di punti di forza, debolezze, opportunità e minacce
+- **POS**: sintesi preliminare degli obiettivi del progetto e del contesto
+- **organizzazione del meeting seguente**
+
+**Documenti prodotti**:
+
+- **[POS](scoping/POS.html) (da discutere)**
+- **[SWOT Analysis](scoping/SWAT.html)**
+- **[Risk Analysis](scoping/risks_analysis.html) (da discutere)**
+- **[COS](scoping/risks_analysis.html) (da discutere)**
+- **[RBS](scoping/RBS.html) (da discutere)**
+- **definizione degli [Use Cases](scoping/use_cases.html) (da discutere)**
+
+Tutti i documenti sono una prima bozza, che deve essere revisionata da _Speicifici_.
+
+### Primo meeting di allineamento 12/09/2023
+**Partecipanti**:
+
+- **HyperFlow**
+  - Theoden (Project Manager)
+  - Faramir (Senior Data Scientist) 
+  - Gimli (Senior Cloud Engineer)
+  - Gandalf (Senior Full Stack Developer)
+- **Specifici**
+  - Angmar (IT Manager)
+  - Peregrino Tuc (Project Manager)
+  - Sauron (Partner)
+
+**Obiettivi del meeting**:
+
+- assicurasi che siano stati compresi correttamente i requisiti e gli use cases
+- allineare le aspettative rispetto alle COS
+- identificare eventuali gap o malintesi prima di procedere alla fase di scoping dettagliato
+
+**Argomenti trattati**:
+
+- **discussione sul POS**: si presenta il POS creato a partire dal RFP
+- **discussione sulla bozza delle COS**: si propone la bozza per verificare che sia allineata
+- **discussione sulla bozza della risk analysis**: si presenta la bozza per verificare che sia allineata
+- **discussione sugli use cases**
+- **organizzazione del meeting seguente**
+
+**Documenti aggiornati**:
+
+- **[POS](scoping/POS.html)**
+- **[Risk Analysis](scoping/risks_analysis.html)**
+- **[COS](scoping/risks_analysis.html)**
+- **[Use Cases](scoping/use_cases.html)**
 
 
-**Contenuto del meeting**
-Discussione sulle modalità di sviluppo del sistema, sui rischi e sui possibili use cases.
+### Secondo meeting di allineamento 13/07/2023
+**Partecipanti**:
 
-**Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-[Risk Analysis](scoping/risk_analysis.html), [Use Cases](scoping/use_cases.html) e [SWAT](scoping/SWAT.html)
+- **HyperFlow**
+  - Theoden (Project Manager)
+  - Faramir (Senior Data Scientist) 
+  - Gimli (Senior Cloud Engineer)
+  - Gandalf (Senior Full Stack Developer)
+- **Specifici**
+  - Angmar (IT Manager)
+  - Peregrino Tuc (Project Manager)
+  - Sauron (Partner)
 
-#### 3. Secondo meeting 09/04/2023
+**Obiettivi del meeting**:
+
+- assicurasi che siano stati compresi correttamente le attività da svolgere
+- identificare eventuali gap o malintesi prima di procedere alla fase di scoping dettagliato
+- decidere quale PMLC utilizzare
+
+- **discussione RBS**: si presentano le macro attività individuate per lo sviluppo del sistema
+- **discussione scelta PMLC**: una volta aggiornato l'RBS, viene deciso quale PMLC adottare 
+
+**Documenti aggiornati**
+- **[RBS](scoping/RBS.html)**
+
+#### Project Management Life Cycle Model
+
+Data la chiarezza del RBS, si è deciso in modo unanime per uno sviluppo **lineare**, questo grazie anche al fatto che _HyperFlow_ ha già realizzato sistemi per estrazione dati da documenti sempre per _Specifici_ e ha competenza nelle tecnologie usate.
+
+## Planning
+
+### Meeting per le attività - interno 15/05/2024
+
+**Partecipanti**
+
+- Theoden (Project Manager)
+- Faramir (Senior Data Scientist) 
+- Gimli (Senior Cloud Engineer)
+- Gandalf (Senior Full Stack Developer)
+
+**Argomenti trattati**:
+
+- **WBS**: vengono decise le attività da fare a partire dal RBS 
+- **test**: viene discusso su come testare il sistema usando come guida la risk analysis
+
+**Documenti prodotti**:
+
+- **[WBS](planning/WBS.html)**
+- **[Test](planning/test.html) (da discutere)**
+
+### Meeting allineamento per i test 18/07/2023
+
 **Partecipanti**
 
 - **HyperFlow**
@@ -60,14 +161,21 @@ Discussione sulle modalità di sviluppo del sistema, sui rischi e sui possibili 
   - Angmar (IT Manager)
   - Peregrino Tuc (Project Manager)
 
-**Contenuto del meeting**
-Revisione e modifica dei documenti prodotti fino ad ora. Le modifiche sono nate da domande di chiarimento e proposte lato _HyperFlow_ e aggiornamenti lato _Specifici_. Accettazione del cliente del documento di [Risk Analysis](scoping/risk_analysis.html).
+**Argomenti trattati**:
 
-**Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-Completamento di [POS](scoping/POS.html) e [COS](scoping/CoS.html), bozza del [RBS](scoping/RBS.html).
+- **test**: viene discusso come effettuare i test, vengono mostrate le proposte elaborate e vengono richiesti gli accessi ai dati della piattaforma attuale
 
-#### 5. Creazione del team
-Theoden organizza il core team per lo sviluppo del sistema che coincide con il developer team.
+**Documenti aggiornati**
+- **[Test](planning/test.html) (da discutere)**
+
+
+#### Nota sul testing
+
+Questa fase viene effettuata ora perchè il core team ha deciso fosse una la parte fondamentale per tutto lo sviluppo in modo da sia monitorare facilmente tutto il processo di sviluppo e le caratteristiche del sistema. Inoltre, avere dei buoni test sulla parte di logica, cioè quella che potrebbe avere più problemi, permette di anticipare di molto i eventuali ritardi.
+
+
+### Creazione del team 19/07/2023
+Il PM Theoden controlla le diponibilità degli sviluppatori e li seleziona per svolgere il lavoro. I nuovi membri vengono informati e viene chiesto loro di leggere la documentazione prodotta fino a questo momento. Il team al completo è composto da:
 
 |Nome   |Posizione                        |Ruolo                                                                      |
 |:-----:|:-------------------------------:|:-------------------------------------------------------------------------:|
@@ -80,110 +188,59 @@ Theoden organizza il core team per lo sviluppo del sistema che coincide con il d
 |Bilbo  |Cloud Engineer                   |Si occuperà dello sviluppo dell'architettura                               |
 |Sam    |Cloud Engineer                   |Si occuperà dello sviluppo dell'architettura                               |
 
-#### 5. Mail interna 10/05/2023
-Theoden invia i documenti prodotti ai nuovi componenti del team, che avranno il compito di sviluppare l'applicativo. Viene richiesto loro di leggerli e segnare eventuali domande da discutere in un meeting interno.
+Il team viene creato ora per poter calcolare le durate delle attività in modo più realistico perchè basate sulle proposte degli sviluppatori che dovranno svolgere i compiti. 
 
-#### 4. Meeting Interno 13/05/2023
+Vengono poi creati 3 sottogruppi in modo da potersi muovere autonomamente:
+
+#### Teams
+Ogni sottogruppo lavora autonomamente e fa riferimento al collega _senior_ e al _project manager_ Theoden. 
+
+|Membri                  |Team           |Riferimento     |
+|:----------------------:|:-------------:|:--------------:|
+|Gandalf                 |Portali web    |Theoden         |
+|Faramir, Frodo e Eowyon |Logica         |Theoden, Faramir|
+|Gimli, Bilbo e Sam      |Infrastruttura |Theoden, Gimli  |
+
+### Meeting calcolo tempistiche - interno 21/07/2023
+
+Vengono effettuate 3 meeting diversi dividendo i membri per team
+
 **Partecipanti**
 
+- Team Logica
+- Team Infrastruttura
+- Team Portali Web
 - Theoden
-- Faramir
-- Gimli
-- Gandalf
-- Frodo
-- Sam
-- Bilbo
-- Eowyn
 
-**Contenuto del meeting**
-Viene presentato il progetto alle figure non senior illustrando velocemente tutti i documenti prodotti fino ad ora. Le domande sorte sono state usate per ridefinire meglio i documenti o sono state segnate da chiedere a _Specifici_. Viene discusso quale PMLC utilizzare.
+**Argomenti trattati**:
 
-**Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-[RBS](scoping/RBS.html) e decisione sul modello **lineare** come PMLC.
+- **tempistiche e dipendenze**: per ogni attività nel WBS vengono definite, in base al gruppo corrispondente, le tempistiche e le dipedenze di ogni attività. Vengono anche segnati dei commenti sulle attività come indicazione per Theoden per creare il PND (e.g. competenze di uno sviluppatore su una data tecnologia)
 
-##### PMLC Model
+**Documenti prodotti**:
 
-Data la chiarezza del [RBS](scoping/RBS.html), in modo unanime si è optato per uno sviluppo **lineare**, in quanto _HyperFlow_ ha già realizzato sistemi per estrazione dati da documenti e ha competenza nelle tecnologie usate.
-L'unico punto d'incertezza riguarda l'accuratezza dell'estrazione, per la quale è stato deciso di creare dei prototipi in modo da poter monitorare ed eventualmente cambiare in anticipo l'approccio utilizzato.
+- **[PND](planning/WBS.html)**
+- **Project Scheduling** (per visualizzarlo importare il file [gantt.csv](planning/gantt.csv) sul sito [https://www.onlinegantt.com/#/gantt](https://www.onlinegantt.com/#/gantt) tramite il bottone Import/Export e poi Import From Excel File selezionando il file, nel caso allego lo [screenshot della pagina](images/GANTT.png))
 
-#### 5. Mail di conferma 14/05/2023
-Peregrino Tuc invia una mail di accetazione dei documenti di [RBS](scoping/RBS.html) e del modello deciso per il PMLC a Theoden.
+#### Nota sulla scelta delle durate
 
-## Planning TODO inserire quando viene decisa la contingency di 3 settimane
+Per ogni attività il collega senior di ciascun gruppo effettua una proposta basata sulla sua esperienza e sui progetti precedenti che poi viene discussa con gli altri colleghi ma l'ultima parola spetta comunque a lui. 
 
-#### 1. Meeting 15/05/2024
+Per questo progetto, i giorni proposti per ciascuna attività si discostavano di poco quindi arrivare ad una decisione ha richiesto poco tempo in quanto i membri dei vari team hanno già esperienza sia sulle tecnologie usate che sulle modalità di sviluppo.
 
-Inoltre si è introdotto l'argomento test per capire come effettuare i test sulla logica.
+### Project Proposal 21/07/2023
+Al termine delle fasi di Scoping e Planning viene redatta la [Project Proposal](planning/project_proposal.html). Questa contiene le informazioni principali raccolte e necessarie per procedere con lo sviluppo. Viene scritta da Theoden e mandata prima internamente per l'approvazione poi a Peregrino Tuc, PM di _Specifici_.
 
-#### 1. Meeting Interno 15/05/2023
-
-**Partecipanti**
-
-- **gruppo 1**
-  - Faramir
-  - Frodo
-  - Eowyn
-- **gruppo 2**
-  - Gimli
-  - Sam
-  - Bilbo
-- **gruppo 3**
-  - Gandalf 
-  
-**Contenuto del meeting**
-Vengono effettuati due meeting separati in modo da sviluppare per gruppi il [WBS](planning/WBS.html) e successivamente il [PND](planning/PND.xlsx) e [Modalità Test](planning/test.html).
-
-La scelta di task, dipendenze e durate è effettuata in ciascun gruppo: il collega senior effettua una proposta basata sulla sua esperienza e sui progetti precedenti che poi viene discussa con gli altri colleghi ma l'ultima parola spetta comunque a lui. In questo caso i giorni proposti per ciascuna attività si discostavano di poco quindi arrivare all'unanimità ha richiesto poco tempo.
-Nel [PND](planning/PND.html) vengono definiti direttamente le relazioni tra _task_ e la loro durata.
-
-**Materiale prodotto a fronte del meeting e condiviso con Theoden**
-I [WBS](planning/WBS.html), [PND](planning/PND.html) e [Modalità Test](planning/test.html) divisi per gruppi.
-
-##### Completamento documenti
-Le parti sviluppate da ogni componente vengono unite da Theoden in un singolo documento per tipologia. Inoltre scrive una bozza del [Project Proposal](planning/project_proposal.html) e del [Project Scheduling](planning/project_scheduling.html). Tutto il material prodotto viene inviato ai membri del team in modo che possa essere revisionanto, commentato ed aggiornato successivamente.
-
-#### 2. Meeting Interno 20/05/2023
-**Partecipanti**
-
-- Theoden
-- Faramir
-- Gimli
-- Gandalf
-- Frodo
-- Sam
-- Bilbo
-- Eowyn
-
-**Contenuto del meeting**
-Vengono revisionati i file prodotti e vengono completati. 
-  
-**Materiale prodotto a fronte del meeting e condiviso con _Specifici_**
-[WBS](planning/WBS.html), [PND](planning/PND.html), [Modalità Test](planning/test.html), [Project Proposal](planning/project_propostal.htmls) e [Project Scheduling](planning/project_scheduling.html)
 
 ## Launching
-
-### Team
-Il team che svilupperà il progetto è lo stesso definito durante la fase di _scoping_. Ogni sottogruppo lavora autonomamente e fa riferimento al collega _senior_ e al _project manager_ Theoden. 
-
-|Membri          |Ruolo                      |Riferimento     |
-|:--------------:|:-------------------------:|:--------------:|
-|Gandalf         |Senion Full Stack Developer|Theoden         |
-|Frodo e Eowyon  |Data Scientist             |Theoden, Faramir|
-|Bilbo e Sam     |Cloud Architect            |Theoden, Gimli  |
-
-
 
 ### Project Definition Statement
 
 Al termine delle fasi di _scoping_ e _planning_, una parte delle informazioni raccolte vengono
-inserite da Theoden nel [Project Definition Statement](launching/PDS.html). Questo documento estende il [Project Overview
-Statement](scoping/POS.html) e serve a tutto il team come linea guida da seguire durante lo sviluppo. 
+inserite da Theoden nel [Project Definition Statement](launching/PDS.html). Questo documento estende il POS e serve a tutto il team come linea guida da seguire durante lo sviluppo. 
 
-### Qualità
+### Piano di qualità
 
 Vengono adottate le pratiche presenti nel documento di [Piano di qualità](launching/quality.html)
-
-### TODO Assegnazione responsabilità
 
 ### Regole operative
 
@@ -198,7 +255,7 @@ Nel caso ci fossero dei problemi che impattano sullo scope viene immediatamente 
 
 #### Definition of DONE
 
-Ogni componente e l'intero sistema vengono definiti DONE una volta superati tutti i test sia in ambiente di test che di produzione.
+Ogni componente e l'intero sistema vengono definiti DONE una volta superati tutti i test.
 
 ### Project Meetings
 
