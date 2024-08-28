@@ -121,6 +121,7 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Speicifi
 - **discussione scelta PMLC**: una volta aggiornato l'RBS, viene deciso quale PMLC adottare 
 
 **Documenti aggiornati**
+
 - **[RBS](scoping/RBS.html)**
 
 #### Project Management Life Cycle Model
@@ -166,6 +167,7 @@ Data la chiarezza del RBS, si è deciso in modo unanime per uno sviluppo **linea
 - **test**: viene discusso come effettuare i test, vengono mostrate le proposte elaborate e vengono richiesti gli accessi ai dati della piattaforma attuale
 
 **Documenti aggiornati**
+
 - **[Test](planning/test.html) (da discutere)**
 
 
@@ -218,8 +220,8 @@ Vengono effettuate 3 meeting diversi dividendo i membri per team
 
 **Documenti prodotti**:
 
-- **[PND](planning/WBS.html)**
-- **Project Scheduling** (per visualizzarlo importare il file [gantt.csv](planning/gantt.csv) sul sito [https://www.onlinegantt.com/#/gantt](https://www.onlinegantt.com/#/gantt) tramite il bottone Import/Export e poi Import From Excel File selezionando il file, nel caso allego lo [screenshot della pagina](images/GANTT.png))
+- **[PND](planning/PND.html)**
+- **Project Scheduling** (per visualizzarlo importare il file [gantt.csv](files/gantt.csv) sul sito [https://www.onlinegantt.com/#/gantt](https://www.onlinegantt.com/#/gantt) tramite il bottone Import/Export e poi Import From Excel File selezionando il file, nel caso allego lo [screenshot della pagina](images/GANTT.png))
 
 #### Nota sulla scelta delle durate
 
@@ -255,7 +257,7 @@ Nel caso ci fossero dei problemi che impattano sullo scope viene immediatamente 
 
 #### Definition of DONE
 
-Ogni componente e l'intero sistema vengono definiti DONE una volta superati tutti i test.
+Ogni componente e l'intero sistema vengono definiti **DONE** una volta superati tutti i test.
 
 ### Project Meetings
 

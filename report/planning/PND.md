@@ -6,7 +6,7 @@
 
 ### Relazioni in forma tabellare
 
-Nel [file](PND.xlsx) vengono mostrate tutte le attività, il loro tempo di esecuzione e le relazioni
+Nel file [PND.xlsx](../files/PND.xlsx) vengono mostrate tutte le attività, il loro tempo di esecuzione e le relazioni. I diagrammi sotto mostrati possono essere visualizzati caricando il file [PND.drawio](../files/PND.drawio) sul sito [draw.io](https://app.diagrams.net/)
 
 
 ### Senza contingency
