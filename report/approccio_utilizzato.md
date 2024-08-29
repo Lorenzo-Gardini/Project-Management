@@ -237,12 +237,15 @@ Al termine delle fasi di Scoping e Planning viene redatta la [Project Proposal](
 
 ### Project Definition Statement
 
-Al termine delle fasi di _scoping_ e _planning_, una parte delle informazioni raccolte vengono
-inserite da Theoden nel [Project Definition Statement](launching/PDS.html). Questo documento estende il POS e serve a tutto il team come linea guida da seguire durante lo sviluppo. 
+Al termine delle fasi di _scoping_ e _planning_, una parte delle informazioni raccolte vengono inserite da Theoden nel [Project Definition Statement](launching/PDS.html). Questo documento estende il POS e serve a tutto il team come linea guida da seguire durante lo sviluppo. 
 
 ### Piano di qualità
 
 Vengono adottate le pratiche presenti nel documento di [Piano di qualità](launching/quality.html)
+
+### Assegnazione responsabilità
+
+Le responsabilità per le attività sono presenti come matrice RASCI nel file [RASCI.xlsx](files/RASCI.xlsx)
 
 ### Regole operative
 
@@ -288,11 +291,12 @@ Le comunicazioni tra colleghi invece avvengono sempre tramite chat o in call su 
 
 ### Gestione delle risorse
 
-TODO over allocation
+#### Over allocation
+Le risorse che sono state assegnate a questo progetto saranno parzialmente impegnate in altri progetti.
 
 #### Slittamento data di fine progetto
 
-Considerando le 3 settimane di contingenza contrattate si ha tempo per gestire eventuali problematiche. Questo dovrebbe consentire di finire il progetto in tempo.
+Considerando i quindici giorni lavorativi di contingenza contrattate si ha tempo per gestire eventuali problematiche. Questo dovrebbe consentire di finire il progetto in tempo.
 
 #### Straordinari
 

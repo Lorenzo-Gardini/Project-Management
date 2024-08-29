@@ -22,6 +22,7 @@ L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazi
 - **integrazione con database** preesistenti
 - **cambio front-end** per la modalità _ingestion_
 - **aggiunta nuovo portale interno** per dipendenti _Specifici_ per la modalità _manuale_
+- **gestione dei database**, sia _DynamoDB_ che _S3_
 - **scrittura documentazione**, sia del codice sviluppato che del funzionamento generale dell'applicativo, utilizzando **_Confluence_**[^1] e **_Sphinx_** [^2]
 - **formazione** per i dipendenti _Specifici_ sul funzionamento del sistema
 
@@ -31,15 +32,60 @@ L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazi
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_1.jpg?raw=true" alt="Ingestion Pipeline" style="max-width: 1000px; display:block; margin: 0 auto"/>
 
 
-Una volta che il documento è stato caricato sul _bucket S3_ dall'utente in automatico viene triggerata la pipeline d'_ingestion_ automatica che estrae i metadati e li salva nel database _Aurora_ di pre-validazione. Viene messo un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata.
+Una volta che il documento è stato caricato, tramite Web App, sul _bucket S3_ in automatico viene triggerata la pipeline d'_ingestion_ che estrae i metadati e li salva nel database _Aurora_ di pre-validazione. La _Lambda Function_ **Start** che controlla la risoluzione del documento e, in caso fosse troppo bassa, avvierebbe il flusso, composto da una _Step Function_, in modalità _Errore_ mostrando nella client Web App un messaggio che invita l'utente a caricare un file con risoluzione più alta. Nel caso il documento avesse una risoluzione sufficiente, allora il flusso viene avviato senza errori. I passaggi che vengono eseguiti sono i seguenti:
+
+- _Lambda Function_ **Preprocessing**: ha il compito di preprocessare il documento in modo che possa essere più facile per textract estrarre il testo
+- _Lambda Function_ **Textract Proxy**: effettua una chiamata al servizio di AWS _Textract_ che estrae il testo dalle immagini con un processo di _Optical Character Recognition_ (OCR)
+- _Lambda Function_ **OCR Reconstruction**: riceve il file .JSON generato da _Textract_ e ne cambia il formato in modo che possa essere utilizzato dai modelli di linguaggio successivamente
+- _Lambda Function_ **CAI NER**: un modello di _NER_ (_Named Entity Recognition_) viene applicato ai documenti _CAI_, identifica e classifica automaticamente informazioni cruciali come nomi dei conducenti, numeri di targa, date dell'incidente, luoghi, descrizioni dei danni e altre entità rilevanti presenti nel modulo
+- _Lambda Function_ **Postprocessing**: ha il compito di riformattare l'output del modello in modo che abbia una struttura standard
+- _Lambda Function_ **Status Generator**: in base a ciò che il modello ha estratto e alla sua confidenza genera, in modo strutturato, uno status per ogni metadato
+- _Lambda Function_ **Output Generator**: organizza e scrive tutti i dati prodotti nel database _Aurora_ di pre-validazine. Inoltre, inseriesce un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata.
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_2.jpg?raw=true" alt="Validation" style="max-width: 400px; display:block; margin: 0 auto"/>
 
-L'utente può confermare i dati estratti/modificati che vengono salvati sul database di post-validazione.
+Una volta che il flusso è terminato e il client viene notificato dalla coda _SQS_ vengono mostrati all'utente i metadati estratti con il relativo status. L'utente può modificare e/o confermare i dati mostrati che vengono salvati sul database _Aurora_ di post-validazione.
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_3.jpg?raw=true" alt="Specifici portal" style="max-width: 300px; display:block; margin: 0 auto"/>
 
-Il dipendente specifici può interrogare direttamente il database di post-validazione in modo da otterenere le infomazioni estratte da un documento.
+Il dipendente _Specifici_ può, su un portale interno ad utilizzo solo dei dipenti _Specifici_, effetturare delle ricerche su documenti _CAI_ estratti, visualizzare i metadati presenti nel database _Aurora_ di post-validazione e modificarli.
+
+## SWAT Analysis
+
+La SWAT Analysis è presente nel sequente [documento](../scoping/SWAT.html)
+
+#### Descrizione del lavoro
+
+Il progetto sarà sviluppato utilizzando un approccio lineare, grazie alla chiarezza dei requisiti e all'esperienza già acquisita da _HyperFlow_ nella realizzazione di sistemi per l'estrazione dei dati da documenti per _Specifici_. L'approccio lineare è stato scelto in modo unanime poiché le tecnologie necessarie sono ben conosciute e le funzionalità da implementare risultano già definite. Questo permetterà di procedere in modo diretto e senza necessità di adattamenti durante il percorso, garantendo una realizzazione efficace e puntuale del progetto.
+
+## Tempi e costi
+
+#### Tempi
+
+Si prevede che lo sviluppo del progetto richiederà circa tre mesi. Durante questo periodo, verranno organizzate diverse riunioni settimanali per monitorare lo stato di avanzamento.
+La conclusione del progetto potrà subire un ritardo di quindici giorni lavorativi, destinati alla contingency.
+Le stime dei tempi sono disponibili nei documenti di [PND](planning/PND.html) e Project Scheduling (importare il file [gantt.csv](files/gantt.csv) sul sito [https://www.onlinegantt.com/#/gantt](https://www.onlinegantt.com/#/gantt)).
+
+
+#### Stima delle risorse
+
+**Risorse Umane:**
+
+- Theoden (Project Manager)
+- Faramir (Senior Data Scientist)
+- Gimli (Senior Cloud Engineer, Team Lead)
+- Gandalf (Senior Full Stack Developer)
+- Frodo (Data Scientist)
+- Eowyn (Data Scientist)
+- Bilbo (Cloud Engineer)
+- Sam (Cloud Engineer)
+
+**Cloud:**
+
+- AWS
+
+Tutti gli sviluppatori lavorano in smart working e tutte le call avverranno da remoto. 
+
 
 ## Milestones
 Sono state decise le seguenti _milestones_ che devono essere raggiunte nel seguente ordine:
@@ -48,8 +94,9 @@ Sono state decise le seguenti _milestones_ che devono essere raggiunte nel segue
 2. **Completamento infrastruttura**
 3. **Completamento portali web**
 4. **Superamento test in ambiente di produzione**
+5. **Completamento formazione**
 
-Il completamento di una milestone comprende sempre il superamento di tutti i test con i batch di _train_ e _validation_.
+Il completamento di una milestone comprende sempre il superamento di tutti i test con tutti i dati forniti.
 
 
 [^1]: **Confluence** è uno strumento per la collaborazione in team. Permette di creare, condividere e modificare contenuti (documenti, note, idee) in modo collaborativo. Offre funzionalità di organizzazione, ricerca e integrazione con altri strumenti aziendali. Ideale per migliorare la collaborazione, aumentare la produttività e gestire le informazioni in modo efficace
