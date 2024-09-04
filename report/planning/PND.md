@@ -6,10 +6,10 @@
 
 ### Relazioni in forma tabellare
 
-Nel file [PND.xlsx](../files/PND.xlsx) vengono mostrate tutte le attività, il loro tempo di esecuzione e le relazioni. I diagrammi sotto mostrati possono essere visualizzati caricando il file [PND.drawio](../files/PND.drawio) sul sito [draw.io](https://app.diagrams.net/)
+Nel file [PND.xlsx](../files/PND.xlsx) vengono mostrate tutte le attività, il loro tempo di esecuzione e le relazioni. I diagrammi sotto mostrati possono essere visualizzati caricando il file [PND.drawio](../files/PND.drawio) sul sito [Draw.io](https://app.diagrams.net/)
 
 
-### Senza contingency
+### Senza scope bank contingency
 
 Viene evidenziato di rosso il percorso critico.
 
@@ -17,7 +17,7 @@ Viene evidenziato di rosso il percorso critico.
   <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_no_contingency.png?raw=true" alt="PND no contingency" style="width: 800px;"/>
 </p>
 
-### Con contingency
+### Con scope bank contingency
 
 <p style="text-align: center;">
   <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/PND_with_contingency.png?raw=true" alt="PND with contingency" style="width: 800px;"/>

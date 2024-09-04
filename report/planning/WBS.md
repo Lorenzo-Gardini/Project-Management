@@ -5,11 +5,6 @@
 
 # Work Breakdown Structure (WBS)
 
-Ogni sviluppo di codice segue l'approccio TDD e di logging automatico a più livelli.
-Si precisa che un requisito è definito come **completato** quando sono stati superati i relativi **test** ed è stata redatta la relativa **documentazione**.
-
-Ecco la lista aggiornata in formato markdown basata sul nuovo elenco fornito:
-
 1. **Logica**
   - Controllo risoluzione
     - 1.1 Sviluppo modulo di controllo risoluzione
@@ -17,7 +12,7 @@ Ecco la lista aggiornata in formato markdown basata sul nuovo elenco fornito:
     - 1.2 Sviluppo modulo preprocessing immagine
     - 1.3 Definizione metadati da estrarre
     - 1.4 Sviluppo modulo chiamata Textract
-    - 1.5 Sviluppo modulo OCR reconstruction
+    - 1.5 Sviluppo modulo OCR Reconstruction
     - 1.6 Sviluppo modulo chiamata modello NER
     - 1.7 Sviluppo modulo di post-processing
     - 1.8 Sviluppo modulo generazione status metadati
@@ -31,7 +26,7 @@ Ecco la lista aggiornata in formato markdown basata sul nuovo elenco fornito:
     - 2.4 Creazione Lambda Function Preprocessing
     - 2.5 Creazione Lambda Function Textract Proxy
     - 2.6 Creazione Lambda Function OCR Reconstruction
-    - 2.7 Caricamento modello su Sagemaker
+    - 2.7 Caricamento modello su SageMaker
     - 2.8 Creazione Lambda Function CAI NER
     - 2.9 Creazione Lambda Function Preprocessing
     - 2.10 Creazione Lambda Function Status Generator
@@ -43,9 +38,9 @@ Ecco la lista aggiornata in formato markdown basata sul nuovo elenco fornito:
 3. **Portali Web**
   - Portale ingestion automatica
     - 3.1 Aggiornamento portale vecchio (trigger ingestion)
-  - Creazione e validazione mockups
-    - 3.2 Creazione mock-ups pagine 
-    - 3.3 Validazione mock-ups con stakeholder
+  - Creazione e validazione mockup
+    - 3.2 Creazione mockup pagine 
+    - 3.3 Validazione mockup con stakeholder
   - Sviluppo portali web
     - 3.4 Creazione pagina visualizzazione metadati e status estratti
     - 3.5 Sviluppo modulo connessione e salvataggio database post-validazione

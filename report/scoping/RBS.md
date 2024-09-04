@@ -4,8 +4,6 @@
 
 # Requirements Breakdown Structure
 
-**DoD**: un requisito è definito come **completato** quando sono stati superati i relativi **test** ed è stata redatta la relativa **documentazione**.
-
 1. **Logica**
    - 1.1 Controllo risoluzione
    - 1.2 Estrazione automatica dei metadati dal documento
@@ -18,7 +16,7 @@
 
 3. **Portali Web**
    - 3.1 Portale ingestion automatica
-   - 3.2 Creazione e validazione mockups
+   - 3.2 Creazione e validazione mockup
    - 3.3 Sviluppo portali web
    - 3.4 Rilascio in produzione
    

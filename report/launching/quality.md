@@ -6,7 +6,7 @@
 
 #### Sviluppare codice pulito e facilmente manutenibile
 - Utilizzare nomi significativi in lingua inglese per variabili, funzioni e classi
-- Utilizzare pattern di programmazione gia noti
+- Utilizzare pattern di programmazione già noti
 - Scrivere solo i commenti necessari, in lingua inglese
 - Evitare la ripetizione di codice (DRY)
 - Utilizzare librerie e frameworks
@@ -26,7 +26,7 @@
 - I dati degli utenti devono essere memorizzati in maniera sicura
 - Ogni credenziale deve essere salvata come _secret_ su AWS tramite CI/CD
 
-#### Automatizzazione dei processi di sviluppo
+#### Automazione dei processi di sviluppo
 - Utilizzare un build tool per gestire le dipendenze delle librerie esterne
 - Eseguire il deploy in automatico
 - Utilizzare le GitHub Actions per eseguire i workflows

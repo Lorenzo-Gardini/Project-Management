@@ -12,7 +12,7 @@
 
 1. Il cliente carica il documento _CAI_ sul portale che lo invia al _server_ che lo processa
 2. I dati estratti vengono visualizzati tramite il portale al cliente
-3. Il cliente può revisionarli, modificarli e infine confermali. I dati confermati vengono inviati nuovamente al server
+3. Il cliente può revisionarli, modificarli e infine confermarli. I dati confermati vengono inviati nuovamente al server
 
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/client_storytelling.png?raw=true" alt="Client Storytelling" style="max-width: 700px; display:block; margin: 0 auto"/>
@@ -21,6 +21,6 @@
 
 1. Il dipendente _Specifici_ cerca il documento sul server tramite il portale
 2. Il server invia i metadati salvati al portale
-3. Il dipendente può revisionarli, modificarli e infine salvarli. I dati salvati vengono inviati nuovamente la server
+3. Il dipendente può revisionarli, modificarli e infine salvarli. I dati salvati vengono inviati nuovamente al server
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/employee_storytelling.png?raw=true" alt="Employee Storytelling" style="max-width: 700px; display:block; margin: 0 auto"/>
