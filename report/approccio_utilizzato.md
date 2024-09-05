@@ -126,7 +126,7 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specific
 
 #### Project Management Life Cycle Model
 
-Data la chiarezza del RBS, si è deciso in modo unanime per uno sviluppo **lineare**, questo grazie anche al fatto che _HyperFlow_ ha già realizzato sistemi per estrazione dati da documenti sempre per _Specifici_ e ha competenza nelle tecnologie usate.
+Data la chiarezza dell'RBS, si è deciso in modo unanime per uno sviluppo **lineare**, questo grazie anche al fatto che _HyperFlow_ ha già realizzato sistemi per estrazione dati da documenti sempre per _Specifici_ e ha competenza nelle tecnologie usate.
 
 ## Planning
 
@@ -141,7 +141,7 @@ Data la chiarezza del RBS, si è deciso in modo unanime per uno sviluppo **linea
 
 **Argomenti trattati**:
 
-- **WBS**: vengono decise le attività da fare a partire dal RBS 
+- **WBS**: vengono decise le attività da fare a partire dall'RBS 
 - **test**: viene discusso su come testare il sistema usando come guida la _Risk Analysis_ e le CoS
 - **costi**: vengono discussi i costi dei servizi e dei bonus ai membri del team
 

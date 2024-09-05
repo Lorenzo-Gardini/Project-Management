@@ -39,7 +39,7 @@ Il goal consiste nel delegare l'elaborazione dei dati ad un sistema che, con una
 
 [^1]: all'interno dei vari documenti vengono definiti con _dipendenti Specifici_ le persone addette ad esaminare e caricare i dati manualmente. Vengono definiti _clienti_ i clienti di _Specifici_, chi compila e invia il documento del sinistro
 [^2]: flusso automatizzato che raccoglie, trasforma e carica i dati in un database
-[^3]: Include la fornitura del servizio completo, dalla pianificazione e progettazione fino alla manutenzione e supporto continuo
+[^3]: include la fornitura del servizio completo, dalla pianificazione e progettazione fino alla manutenzione e supporto continuo
 [^4]: **Amazon Web Services** è una piattaforma di servizi di cloud computing fornita da Amazon, che offre infrastruttura, piattaforma e software come servizio per costruire e gestire applicazioni nel cloud
 
 

@@ -26,7 +26,7 @@ Il portale salva sul _Bucket S3_ il documento e in automatico viene triggerata l
 - _Lambda Function_ **CAI NER**: un modello di _NER_ (_Named Entity Recognition_) viene applicato ai documenti _CAI_, identifica e classifica automaticamente informazioni cruciali come nomi dei conducenti, numeri di targa, date dell'incidente, luoghi, descrizioni dei danni e altre entità rilevanti presenti nel modulo
 - _Lambda Function_ **Postprocessing**: ha il compito di riformattare l'output del modello in modo che abbia una struttura standard
 - _Lambda Function_ **Status Generator**: in base a ciò che il modello ha estratto e alla sua confidenza genera, in modo strutturato, uno status per ogni metadato
-- _Lambda Function_ **Output Generator**: organizza e scrive tutti i dati prodotti nel database _Aurora_ di pre-validazine. Inoltre, inseriesce un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata.
+- _Lambda Function_ **Output Generator**: organizza e scrive tutti i dati prodotti nel database _Aurora_ di pre-validazine. Inoltre, inseriesce un messaggio sulla coda _SQS_ in modo da notificare il client che l'operazione è stata completata
 
 Una volta che il flusso è terminato e il client viene notificato dalla coda _SQS_ vengono mostrati all'utente i metadati estratti con il relativo status. L'utente può modificare e/o confermare i dati mostrati che vengono salvati sul database _Aurora_ di post-validazione.
 

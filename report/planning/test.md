@@ -8,7 +8,7 @@
 
 Per i test vengono dati a disposizione di _HyperFLow_ gli accessi ai vecchi database. In totale sono stati selezionati 60.000 documenti.
 
-Per le prime fasi di sviluppo di ciascun componente non vengono usati tutti e 60.000 documenti ma viene creato un _batch_ di 1_000 documenti rappresentativi con alta variabilità.
+Per le prime fasi di sviluppo di ciascun componente non vengono usati tutti e 60.000 documenti ma viene creato un _batch_ di 1.000 documenti rappresentativi con alta variabilità.
 
 Quando i test di quel componente vengono superati dai documenti nel _batch_ allora vengono effettuati su tutti e 60.000 i documenti. Successivamente, si adotta il seguente approccio:
 
@@ -24,7 +24,7 @@ Questo approccio viene utilizzato per tutti i componenti in logica, infrastruttu
 
 - **logica**: per ogni componente vengono effettuati test di tipo _Unit Test_, _Validation Test_, _Performance Test_ e _Acceptance Test_
 - **infrastruttura**: per ogni componente vengono effettuati _Unit Test_ e _Integration Test_. Modifiche effettuate a posteriori della creazione dell'intera _pipeline_ comportano un ciclo completo di test di quest'ultima. Un ciclo di test dell'intera _pipeline_ è composto da _Integration Test_, _Acceptance Test_, _Stress Test_ e _Performance Test_
-- **portali web**: la logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_. Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_. Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_. 
+- **portali web**: la logica di singolo componente viene testato utilizzando _Unit Test_ e _Acceptance Test_. Ogni singolo componente viene testato utilizzando _Unit Test_ e _Integration Test_. Ogni portale viene testato con _Security Test_, _Integration Test_, _Usability Test_ e _Acceptance Test_
 
 
 ### Data Fixture
