@@ -25,7 +25,7 @@ L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazi
 - **scrittura documentazione**, sia del codice sviluppato che del funzionamento generale dell'applicativo, utilizzando **_Confluence_**[^1] e **_Sphinx_** [^2]
 - **formazione** per i dipendenti _Specifici_ sul funzionamento del sistema
 
-## Architettura sitema
+## Architettura sistema
 #### Architettura pipeline d'ingestion
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_1.jpg?raw=true" alt="Ingestion Pipeline" style="max-width: 1000px; display:block; margin: 0 auto"/>
@@ -45,13 +45,13 @@ La validazione, da parte dell'utente, dei dati estratti serve sia per **compensa
 
 <img src="https://github.com/Lorenzo-Gardini/Project-Management/blob/main/report/images/architecture_3.jpg?raw=true" alt="Specifici portal" style="max-width: 300px; display:block; margin: 0 auto"/>
 
-Il dipendente specifici può interrogare direttamente il database di post-validazione in modo da ottenere le informazioni estratte da un documento.
+Il dipendente _Specifici_ può interrogare direttamente il database di post-validazione in modo da ottenere le informazioni estratte da un documento.
 
 Il tasso di soddisfazione dei clienti viene misurato per la durata di 4 mesi utilizzando un **popup** che viene mostrato al termine di ciascuna esecuzione.
 
-## SWAT Analysis
+## SWOT Analysis
 
-La SWAT Analysis è presente nel sequente [documento](../scoping/SWAT.html)
+La SWOT Analysis è presente nel sequente [documento](../scoping/SWOT.html)
 
 ## Descrizione del lavoro
 

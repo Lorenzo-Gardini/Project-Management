@@ -45,16 +45,16 @@ In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team
 
 - **revisione dell'RFP**
 - **analisi preliminare del progetto**: valutazione della fattibilità tecnica e delle risorse necessarie
-- **definizione preliminare delle COS**
+- **definizione preliminare delle CoS**
 - **SWOT e Risk Analysis**: analisi di punti di forza, debolezze, opportunità e minacce
 - **POS**: sintesi preliminare degli obiettivi del progetto e del contesto
 
 **Documenti prodotti**:
 
 - **[POS](scoping/POS.html)** (da discutere)
-- **[SWOT Analysis](scoping/SWAT.html)**
+- **[SWOT Analysis](scoping/SWOT.html)**
 - **[Risk Analysis](scoping/risks_analysis.html)**(da discutere)
-- **[CoS](scoping/risks_analysis.html)** (da discutere)
+- **[CoS](scoping/CoS.html)** (da discutere)
 - **definizione degli [Use Cases](scoping/use_cases.html)** (da discutere)
 
 Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specifici_.
@@ -83,7 +83,7 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specific
 **Argomenti trattati**:
 
 - **discussione sul POS**: si presenta il POS creato a partire dal RFP
-- **discussione sulla bozza delle COS**: si propone la bozza per verificare che sia allineata
+- **discussione sulla bozza delle CoS**: si propone la bozza per verificare che sia allineata
 - **discussione sulla bozza della risk analysis**: si presenta la bozza per verificare che sia allineata
 - **discussione sugli use cases**
 
@@ -91,14 +91,14 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specific
 
 - **[POS](scoping/POS.html)**
 - **[Risk Analysis](scoping/risks_analysis.html)**
-- **[CoS](scoping/risks_analysis.html)**
+- **[CoS](scoping/CoS.html)**
 - **[Use Cases](scoping/use_cases.html)**
 
 **Documenti prodotti**:
 - **[RBS](scoping/RBS.html)** (da discutere)
 
 
-### Secondo meeting di allineamento 13/07/2023
+### Secondo meeting di allineamento 13/09/2023
 **Partecipanti**:
 
 - **HyperFlow**
@@ -130,7 +130,7 @@ Data la chiarezza dell'RBS, si è deciso in modo unanime per uno sviluppo **line
 
 ## Planning
 
-### Meeting per le attività - interno 15/05/2024
+### Meeting per le attività - interno 15/09/2024
 
 **Partecipanti**
 
@@ -151,7 +151,7 @@ Data la chiarezza dell'RBS, si è deciso in modo unanime per uno sviluppo **line
 - **[Test](planning/test.html)** (da discutere)
 - **[Cost Management](planning/cost_management.html)** (da discutere)
 
-### Meeting allineamento per i test e i costi 18/07/2023
+### Meeting allineamento per i test e i costi 18/09/2023
 
 **Partecipanti**
 
@@ -177,10 +177,10 @@ Data la chiarezza dell'RBS, si è deciso in modo unanime per uno sviluppo **line
 
 #### Nota sul testing
 
-Questa fase viene effettuata ora perché il core team ha deciso fosse una la parte fondamentale per tutto lo sviluppo in modo da sia monitorare facilmente tutto il processo di sviluppo e le caratteristiche del sistema. Inoltre, avere dei buoni test sulla parte di logica, cioè quella che potrebbe avere più problemi, permette di anticipare di molto i eventuali ritardi.
+Questa fase viene effettuata ora perché il core team ha deciso fosse una parte fondamentale per tutto lo sviluppo in modo da monitorare facilmente tutto il processo di sviluppo e le caratteristiche del sistema. Inoltre, avere dei buoni test sulla parte di logica, cioè quella che potrebbe avere più problemi, permette di anticipare di molto gli eventuali ritardi.
 
 
-### Creazione del team 19/07/2023
+### Creazione del team 19/09/2023
 Il PM Theoden controlla le disponibilità degli sviluppatori e li seleziona per svolgere il lavoro. I nuovi membri vengono informati e viene chiesto loro di leggere la documentazione prodotta fino a questo momento. Il team al completo è composto da:
 
 |Nome   |Posizione                        |Ruolo                                                                      |
@@ -207,7 +207,7 @@ Ogni sottogruppo lavora autonomamente e fa riferimento al collega _senior_ e al 
 |Faramir, Frodo e Eowyon |Logica         |Theoden, Faramir|
 |Gimli, Bilbo e Sam      |Infrastruttura |Theoden, Gimli  |
 
-### Meeting calcolo tempistiche - interno 21/07/2023
+### Meeting calcolo tempistiche - interno 21/09/2023
 
 Vengono effettuate 3 meeting diversi dividendo i membri per team
 
@@ -233,7 +233,7 @@ Per ogni attività, il collega senior di ciascun gruppo propone una soluzione ba
 
 Per questo progetto, i giorni proposti per ciascuna attività differivano solo leggermente, quindi è stato facile arrivare a una decisione. I membri dei vari team hanno già esperienza sia con le tecnologie utilizzate che con le modalità di sviluppo, il che ha ridotto significativamente i tempi di discussione.
 
-### Project Proposal 21/07/2023
+### Project Proposal 22/09/2023
 Al termine delle fasi di Scoping e Planning viene redatta la [Project Proposal](planning/project_proposal.html). Questa contiene le informazioni principali raccolte e necessarie per procedere con lo sviluppo. Viene scritta da Theoden e mandata prima internamente per l'approvazione poi a Peregrino Tuc, PM di _Specifici_.
 
 
@@ -308,7 +308,7 @@ Non ci sarà molto probabilmente la necessità di ricorrere a straordinari del p
 
 ## Monitoring e Controlling
 
-Il progetto è di tipo tradizionale, anche se non tutti i task del WBS possiedono una dipendenza stretta fra loro i precedenti. Questo implica il fatto che l'esecuzione dei diversi tasks sia per lo più sequenziale.
+Il progetto è di tipo tradizionale, anche se non tutti i task del WBS possiedono una dipendenza stretta fra i loro precedenti. Questo implica il fatto che l'esecuzione dei diversi tasks sia per lo più sequenziale.
 
 ### Modalità di reporting
 
@@ -350,7 +350,7 @@ corretto funzionamento del sistema e ottenere feedback per risolvere eventuali p
 
 ### Release e collaudo
 
-La fase di release finale viene preceduta da una fase di circa 4 mesi in qui il programma viene accuratamente testato, sia da lato azienda sia dai clienti che invia il feedback tramite popup. In questa fase la release è caratterizzata da un approccio di tipo _parallel_ in cui la vecchia soluzione è ancora operativa mentre si prova e utilizza la nuova. Questa fase di test permetterà quindi di individuare tempestivamente eventuali bug e problematiche. Per ogni problema riscontrato viene applicata la modifica, testata in ambiente di test, e successivamente rilasciata e testata in ambiente di produzione.
+La fase di release finale viene preceduta da una fase di circa 4 mesi in qui il programma viene accuratamente testato, sia lato azienda sia dai clienti che inviano il feedback tramite popup. In questa fase la release è caratterizzata da un approccio di tipo _parallel_ in cui la vecchia soluzione è ancora operativa mentre si prova e utilizza la nuova. Questa fase di test permetterà quindi di individuare tempestivamente eventuali bug e problematiche. Per ogni problema riscontrato viene applicata la modifica, testata in ambiente di test, e successivamente rilasciata e testata in ambiente di produzione.
 
 L'approccio utilizzato per il deploy del sistema è quello del _Continuous Deployment_. Grazie all'utilizzo di metodologie di _Continuous Integration_, il rilascio di nuove versioni corrette avviene attraverso un workflow automatizzato. Questo approccio consente rilasci veloci e frequenti a fronte di correzioni di eventuali errori dopo il rilascio del sistema.
 
@@ -365,7 +365,7 @@ Quando la soluzione verrà considerata stabile e saranno trascorsi i 4 mesi di c
   - [CoS](scoping/CoS.html)
   - [RBS](scoping/RBS.html)
   - [Risk Analysis](scoping/risk_analysis.html)
-  - [SWAT](scoping/SWAT.html)
+  - [SWOT](scoping/SWOT.html)
   - [Use Cases](scoping/use_cases.html)
 
 - Planning:

@@ -20,7 +20,7 @@ Per quanto riguarda il sistema, è stato scelto di realizzare una suddivisione i
 I clienti di _Specifici_ accedono al portale web dedicato al caricamento dei documenti _CAI_. Da qui verrà chiesto loro di sottomettere il documento.
 Il portale salva sul _Bucket S3_ il documento e in automatico viene triggerata la pipeline d'_ingestion_. La _Lambda Function_ **Start** controlla la risoluzione del documento e, in caso fosse troppo bassa, avvierebbe il flusso in modalità _Errore_ mostrando al cliente un messaggio che invita l'utente a caricare un file con risoluzione più alta. Nel caso il documento avesse una risoluzione sufficiente, allora il flusso viene avviato senza errori. I passaggi che vengono eseguiti dalla _Step Function_ sono i seguenti:
 
-- _Lambda Function_ **Preprocessing**: ha il compito di preprocessare il documento in modo che possa essere più facile per textract estrarre il testo
+- _Lambda Function_ **Preprocessing**: ha il compito di preprocessare il documento in modo che possa essere più facile per _Textract_ estrarre il testo
 - _Lambda Function_ **Textract Proxy**: effettua una chiamata al servizio di AWS _Textract_ che estrae il testo dalle immagini con un processo di _Optical Character Recognition_ (OCR)
 - _Lambda Function_ **OCR Reconstruction**: riceve il file .JSON generato da _Textract_ e ne cambia il formato in modo che possa essere utilizzato dai modelli di linguaggio successivamente
 - _Lambda Function_ **CAI NER**: un modello di _NER_ (_Named Entity Recognition_) viene applicato ai documenti _CAI_, identifica e classifica automaticamente informazioni cruciali come nomi dei conducenti, numeri di targa, date dell'incidente, luoghi, descrizioni dei danni e altre entità rilevanti presenti nel modulo
@@ -38,8 +38,6 @@ Il dipendente _Specifici_ può, su un portale interno ad utilizzo solo dei dipen
 ## Requirements
 
 Si fa riferimento alle [CoS](../scoping/CoS.html) e ai _Success Criteria_ nel documento di [POS](../scoping/POS.html).
-
-Certo! Ecco il testo con gli accenti corretti:
 
 Affinché i criteri di soddisfazione siano valutati oggettivamente, vengono utilizzati i questionari anonimi e feedback diretti da parte di _Specifici_ e l'utilizzo di popups per quanto riguarda la valutazione clienti.
 
