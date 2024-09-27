@@ -13,7 +13,7 @@ Il sistema è un **servizio _E2E_** implementato direttamente sulla piattaforma 
 
 
 ## Background
-L'azienda _Specifici_ possiede una grande quantità di documenti di **constatazione amichevole di incidente (CAI)** in formato **PDF** prodotte dai sui clienti. I dipendenti di _Specifici_ le leggono e caricano manualmente le informazioni sul loro portale. Quest'ultimo è collegato a diversi database relazionali _MySQL_ che mantengono tutte le informazioni. Un **dipendente _Specifici_** impiega circa 7 minuti a caricare manualmente i dati di ciascun documento. Da stime calcolate internamente l'8% dei file analizzati viene caricato sul portale con almeno un errore. Vengono ricevuti in media 30 documenti al giorno, che richiedono circa 3.5 ore di lavoro totali. Questo implica che i dipendenti siano pagati per svolgere un lavoro ripetitivo ed automatizzabile.
+L'azienda _Specifici_ possiede una grande quantità di documenti di **Constatazione Amichevole di Incidente (CAI)** in formato **PDF** prodotte dai sui clienti. I dipendenti di _Specifici_ le leggono e caricano manualmente le informazioni sul loro portale. Quest'ultimo è collegato a diversi database relazionali _MySQL_ che mantengono tutte le informazioni. Un **dipendente _Specifici_**[^1] impiega circa 7 minuti a caricare manualmente i dati di ciascun documento. Da stime calcolate internamente da _Specifici_, l'8% dei file analizzati viene caricato sul portale con almeno un errore. Vengono ricevuti in media 30 documenti al giorno, che richiedono circa 3.5 ore di lavoro totali giornaliere. Questo implica che i dipendenti debbano usare le loro ore lavorative per svolgere un lavoro ripetitivo ed automatizzabile.
 
 ## Obiettivi
 - **implementazione della logica** di estrazione
@@ -62,7 +62,7 @@ Il progetto sarà sviluppato utilizzando un approccio lineare, grazie alla chiar
 ### Tempi
 
 Si prevede che lo sviluppo del progetto richiederà circa tre mesi. Durante questo periodo, verranno organizzate diverse riunioni settimanali per monitorare lo stato di avanzamento.
-La conclusione del progetto potrà subire un ritardo di 15 giorni lavorativi, destinati alla _scope bank contingency_.
+La conclusione del progetto potrà subire un ritardo di 10 giorni lavorativi, destinati alla _scope bank contingency_.
 Le stime dei tempi sono disponibili nei documenti di [PND](planning/PND.html) e Project Scheduling (importare il file [gantt.csv](files/gantt.csv) sul sito [https://www.onlinegantt.com/#/gantt](https://www.onlinegantt.com/#/gantt)).
 
 Successivo al termine dello sviluppo segue una fase di 4 mesi di collaudo da parte dei dipendenti _Specifici_ e dei clienti. 

@@ -18,7 +18,7 @@
 - Utilizzare tools per eseguire il testing del codice in automatico e frequentemente
 - Utilizzare approccio TDD
 
-##### Documentazione
+#### Documentazione
 - Documentare il codice, le architetture e i processi in modo dettagliato e aggiornato utilizzando _Sphinx_ e _Confluence_
 
 #### Sicurezza

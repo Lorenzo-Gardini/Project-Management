@@ -44,8 +44,8 @@ Per quanto riguarda la messa a punto del sistema, utilizzando il calcolatore dei
 
 ## Scope bank
 
-Viene anche decisa una **scope bank** di _contingency_ di 15 giorni lavorativi. Se al termine del progetto avanzassero dei giorni, questi verrebbero scontati direttamente dai giorni di un prossimo progetto con _Specifici_. 
+Viene anche decisa una **scope bank** di _contingency_ di 10 giorni lavorativi. Se al termine del progetto avanzassero dei giorni, questi verrebbero scontati direttamente dai giorni di un prossimo progetto con _Specifici_. 
 
 ## Cash Flow
 
-Per questo progetto non sono state assunti nuovi dipendenti. È previsto un bonus nel caso il lavoro fosse svolto entro la data prestabilita con buoni risultati.
+Per questo progetto non sono state assunti nuovi dipendenti. È previsto un bonus ai dipendenti _HyperFlow_ nel caso il lavoro fosse svolto entro la data prestabilita con buoni risultati.

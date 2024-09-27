@@ -44,6 +44,7 @@ In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team
 **Argomenti trattati**:
 
 - **revisione dell'RFP**
+- analisi dello **stato corrente**
 - **analisi preliminare del progetto**: valutazione della fattibilità tecnica e delle risorse necessarie
 - **definizione preliminare delle CoS**
 - **SWOT e Risk Analysis**: analisi di punti di forza, debolezze, opportunità e minacce
@@ -59,6 +60,13 @@ In tutti i meeting con _Specifici_, Theoden, il PM, ricopre sia il ruolo di team
 
 Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specifici_.
 
+#### Nota sul Risk Anaysis
+La risk analysis viene effettuata così in anticipo per diversi motivi:
+
+1. agire come **consulenti** presentando al cliente eventuali problemi a cui non avevano pensato o dato il giusto peso
+2. avere un'idea sulla **fattibilità** del progetto in tutti i sui aspetti
+3. anticipare **cambi di scope** derivati da incomprensioni
+4. eventualmente ragionare preventivamente sulle figure del **team** da selezionare, in base a esperienza e preparazione tecnica specifica
 
 
 ### Primo meeting di allineamento 12/09/2023
@@ -94,9 +102,11 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specific
 - **[CoS](scoping/CoS.html)**
 - **[Use Cases](scoping/use_cases.html)**
 
-**Documenti prodotti**:
+**Documenti prodotti a fronte del meeting**:
 - **[RBS](scoping/RBS.html)** (da discutere)
 
+##### Nota sull'RBS
+Per la raccolta dei requisiti e la stesura dell'RBS viene usato il tool di **Requirements Reuse** e **Use Cases**. Per la parte di
 
 ### Secondo meeting di allineamento 13/09/2023
 **Partecipanti**:
@@ -115,8 +125,6 @@ Tutti i documenti sono una prima bozza, che deve essere revisionata da _Specific
 
 - assicurasi che siano stati compresi correttamente le attività da svolgere
 - identificare eventuali gap o malintesi prima di procedere alla fase di scoping dettagliato
-- decidere quale **PMLC** utilizzare
-
 - **discussione RBS**: si presentano le macro attività individuate per lo sviluppo del sistema
 - **discussione scelta PMLC**: una volta aggiornato l'RBS, viene deciso quale PMLC adottare 
 
@@ -168,6 +176,7 @@ Data la chiarezza dell'RBS, si è deciso in modo unanime per uno sviluppo **line
 
 - **test**: viene discusso come effettuare i test, vengono mostrate le proposte elaborate e vengono richiesti gli accessi ai dati della piattaforma attuale
 - **costi**: viene discusso il calcolo del costo del sistema, sulla richiesta di risparmio sui test massivi e sulla **scope bank**
+- vengono decise le modalità di validazione dei mockup delle pagine web
 
 **Documenti aggiornati**
 
@@ -229,7 +238,7 @@ Vengono effettuate 3 meeting diversi dividendo i membri per team
 
 #### Modalità della scelta delle durate dei task
 
-Per ogni attività, il collega senior di ciascun gruppo propone una soluzione basata sulla propria esperienza e sui progetti precedenti della stessa tipologia. La proposta viene poi discussa con gli altri membri del team, ma la decisione finale spetta comunque a lui. 
+Per ogni attività, il collega senior di ciascun gruppo propone una soluzione basata sulla propria esperienza e sui progetti precedenti della stessa tipologia. La proposta viene poi discussa con gli altri membri del team, usando la **three point technique**, ma la decisione finale spetta comunque a lui. 
 
 Per questo progetto, i giorni proposti per ciascuna attività differivano solo leggermente, quindi è stato facile arrivare a una decisione. I membri dei vari team hanno già esperienza sia con le tecnologie utilizzate che con le modalità di sviluppo, il che ha ridotto significativamente i tempi di discussione.
 
@@ -265,7 +274,7 @@ Nel caso ci fossero dei problemi che impattano sullo scope viene immediatamente 
 
 #### Definition of DONE
 
-Ogni componente e l'intero sistema vengono definiti **DONE** una volta che ciascuno di essi supera tutti i suoi test.
+Ogni componente e l'intero sistema vengono definiti **DONE** una volta che ciascuno di essi supera tutti i suoi test ed è stata completata la sua documentazione. 
 
 ### Project Meetings
 
@@ -299,7 +308,7 @@ Le risorse che sono state assegnate a questo progetto saranno parzialmente impeg
 
 #### Slittamento data di fine progetto
 
-Considerando i quindici giorni lavorativi di contingenza contrattate si ha tempo per gestire eventuali problematiche. Questo dovrebbe consentire di finire il progetto in tempo.
+Considerando i 10 giorni lavorativi di contingenza contrattate si ha tempo per gestire eventuali problematiche. Questo dovrebbe consentire di finire il progetto in tempo.
 
 #### Straordinari
 
@@ -315,9 +324,9 @@ Il progetto è di tipo tradizionale, anche se non tutti i task del WBS possiedon
 Vengono usati diversi tool per il monitoraggio:
 
 - **project status meetings**: _Daily Meetings_ interni e _Review Meeting_ con _Specifici_
-- **gantt chart**: viene utilizzato il Gantt nella versione _Gantt Chart Project Status Report_ per verificare che tutti i task rispettino i giorni prestabiliti
+- **gantt chart**: viene utilizzato il Gantt nella versione _Gantt Chart Project Status Report_ per verificare che tutti i task rispettino i giorni prestabiliti. Gli sviluppatori utilizzano una board creata ad hoc su _Notion_ per gestire le attività da fare
 - **variance reports**: la scelta è basata sul fatto che si ha un interesse su cosa è andato storto durante lo svolgimento dei diversi tasks, non solamente riguardo quelli più rilevanti. Anche se generalmente i tasks hanno importanza diversa fra loro, può capitare che il non completamento di un task non permetterebbe di iniziare quello successivo
-- **cumulative reports**: tabelle molto semplici su fogli di calcolo aggiornate frequentemente, in cui vengono mostrati, per ogni task da fare, lo stato, la %completamento, le responsabilità ed eventuali note. Servono per la gestione interna del team
+- **cumulative reports**: tabelle molto semplici su fogli di calcolo aggiornate frequentemente, in cui vengono mostrati, per ogni task da fare, lo stato, la % completamento, le responsabilità ed eventuali note. Servono per la gestione interna del team
 
 ### Monitoraggio dei costi
 
@@ -331,7 +340,7 @@ In particolare, è importante gestire la presenza di scope creep, affinché la g
 
 ### Issue Log
 
-Si utilizza una bacheca di _Jira_, condivisa tra i membri del team, che contiene le liste "Todo, In Progress, Done, In Hold". Ogni issue viene creata come una "scheda" nella lista "Todo" e tenuta aggiornata. Ogni scheda contiene titolo, descrizione e proprietari/o. Il sistema è stato configurato in modo da mandare in automatico una mail al proprietario della issue ad ogni sua creazione o modifica.
+Si utilizza una bacheca di _Jira_, condivisa tra i membri del team e con _Specifici_, che contiene le liste "Todo, In Progress, Done, In Hold". Ogni issue viene creata come una "scheda" nella lista "Todo" e tenuta aggiornata. Ogni scheda contiene titolo, descrizione e proprietari/o. Il sistema è stato configurato in modo da mandare in automatico una mail al proprietario della issue ad ogni sua creazione o modifica.
 
 ### Project status meetings
 
@@ -345,8 +354,7 @@ Fino adesso si è discusso di alcune tecniche di prevenzione (sopra elencate), o
 
 ### Acceptance 
 
-Durante tutto il periodo di sviluppo, sono stati effettuati tutti i test previsti per verificare il
-corretto funzionamento del sistema e ottenere feedback per risolvere eventuali problematiche impreviste. Oltre al corretto funzionamento del sistema, sono state valutate anche le performance della pipeline e del sito, misurando la loro efficienza nell'esecuzione delle varie operazioni principali e garantendo che soddisfino le aspettative di velocità e reattività che erano state concordate durante la fase di analisi dei requisiti.
+Durante tutto il periodo di sviluppo, sono stati effettuati tutti i test previsti per verificare il corretto funzionamento del sistema e ottenere feedback per risolvere eventuali problematiche impreviste. Oltre al corretto funzionamento del sistema, sono state valutate anche le performance della pipeline e del sito, misurando la loro efficienza nell'esecuzione delle varie operazioni principali e garantendo che soddisfino le aspettative di velocità e reattività che erano state concordate durante la fase di analisi dei requisiti.
 
 ### Release e collaudo
 

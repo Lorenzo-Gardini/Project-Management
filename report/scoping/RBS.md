@@ -24,8 +24,4 @@
    - 4.1 Guida per l'utente
 
 5. **Formazione**
-   - 5.1 Selezione formatori interni
-   - 5.2 Definizione modalità  di formazione (in presenza,  online)
-   - 5.3 Sviluppo materiali didattici
-   - 5.4 Pianificazione calendario formativo e invio comunicazioni ai partecipanti
-   - 5.5 Esecuzione formazione
+   - 5.1 Formare dipendenti _Specifici_

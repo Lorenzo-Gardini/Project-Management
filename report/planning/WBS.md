@@ -62,8 +62,9 @@
     - 4.3 Pubblicazione guida su Confluence
      
 5. **Formazione**
-  - 5.1 Selezione formatori interni
-  - 5.2 Definizione modalità di formazione
-  - 5.3 Sviluppo materiali didattici
-  - 5.4 Pianificazione calendario formativo e invio comunicazioni ai partecipanti
-  - 5.5 Esecuzione formazione
+  - Formare dipendenti _Specifici_
+    - 5.1 Selezione formatori interni
+    - 5.2 Definizione modalità di formazione
+    - 5.3 Sviluppo materiali didattici
+    - 5.4 Pianificazione calendario formativo e invio comunicazioni ai partecipanti
+    - 5.5 Esecuzione formazione

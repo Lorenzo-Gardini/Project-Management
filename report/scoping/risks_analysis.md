@@ -42,9 +42,9 @@ th, td{
             <td><strong>Accuratezza</strong></td>
             <td>L'algoritmo di estrazione potrebbe non raggiungere il livello di <strong>accuratezza</strong> necessario.</td>
             <td>Tecnico</td>
-            <td>alta(4)</td>
+            <td>bassa(3)</td>
             <td>alto(4)</td>
-            <td><span class="high">16</span></td>
+            <td><span class="medium">12</span></td>
             <td><strong>Controlli continui</strong> durante la realizzazione della soluzione mirati a mantenere alta la qualità della stessa. In caso di problemi, ricercare <strong>fornitori alternativi</strong> per le tecnologie impiegate.</td>
         </tr>
         <tr>
@@ -84,6 +84,33 @@ th, td{
             <td>Implementare <strong>politiche rigorose</strong> di gestione dei dati, utilizzare tecnologie di <strong>sicurezza</strong> per proteggere le informazioni.</td>
         </tr>
         <tr>
+            <td><strong>Costo test troppo elevati</strong></td>
+            <td>I costi per i test potrebbero essere <strong>elevati</strong> a causa di molte richieste a servizi esterni.</td>
+            <td>Tecnico</td>
+            <td>alta(4)</td>
+            <td>medio(3)</td>
+            <td><span class="medium">12</span></td>
+            <td>Creare dei <strong>mock</strong> delle chiamate da usare in fase di test.</td>
+        </tr>
+        <tr>
+            <td><strong>Poca familiarità con le tecnologie</strong></td>
+            <td>Le tecnologie impiegate necessitano molte risorse per poter imparare il loro funzionamento.</td>
+            <td>Tecnico</td>
+            <td>molto bassa(1)</td>
+            <td>medio(3)</td>
+            <td><span class="low">3</span></td>
+            <td>Organizzare <strong>corsi</strong> per l’addestramento sulle tecnologie da utilizzare. Fare riferimento ad altri reparti in azienda se hanno lavorato con tali tecnologie.</td>
+        </tr>
+        <tr>
+            <td><strong>Improvviso cambio di scope</strong></td>
+            <td><strong>Cambio di scope</strong> rispetto a quello originariamente stabilito.</td>
+            <td>Tecnico</td>
+            <td>bassa(2)</td>
+            <td>alto(4)</td>
+            <td><span class="medium">8</span></td>
+            <td>Organizzare il team e mantenere i rapporti con il cliente in modo da <strong>integrare al meglio</strong> le modifiche.</td>
+        </tr>
+        <tr>
             <td><strong>Resistenza al cambiamento</strong></td>
             <td>I dipendenti <em>Specifici</em> potrebbero <strong>resistere</strong> all'adozione del nuovo sistema per timore di perdere il posto di lavoro o perché devono apprendere un nuovo processo.</td>
             <td>Cambiamento</td>
@@ -118,33 +145,6 @@ th, td{
             <td>alto(4)</td>
             <td><span class="medium">8</span></td>
             <td>Organizzare in <strong>anticipo</strong> gli sviluppatori. Verifica delle conoscenze delle risorse del team di sviluppo ed eventuale assunzione di nuovo personale, anche a progetto.</td>
-        </tr>
-        <tr>
-            <td><strong>Costo test troppo elevati</strong></td>
-            <td>I costi per i test potrebbero essere <strong>elevati</strong> a causa di molte richieste a servizi esterni.</td>
-            <td>Tecnico</td>
-            <td>alta(4)</td>
-            <td>medio(3)</td>
-            <td><span class="medium">12</span></td>
-            <td>Creare dei <strong>mock</strong> delle chiamate da usare in fase di test.</td>
-        </tr>
-        <tr>
-            <td><strong>Poca familiarità con le tecnologie</strong></td>
-            <td>Le tecnologie impiegate necessitano molte risorse per poter imparare il loro funzionamento.</td>
-            <td>Tecnico</td>
-            <td>molto bassa(1)</td>
-            <td>medio(3)</td>
-            <td><span class="low">3</span></td>
-            <td>Organizzare <strong>corsi</strong> per l’addestramento sulle tecnologie da utilizzare. Fare riferimento ad altri reparti in azienda se hanno lavorato con tali tecnologie.</td>
-        </tr>
-        <tr>
-            <td><strong>Improvviso cambio di scope</strong></td>
-            <td><strong>Cambio di scope</strong> rispetto a quello originariamente stabilito.</td>
-            <td>Tecnico</td>
-            <td>bassa(2)</td>
-            <td>alto(4)</td>
-            <td><span class="medium">8</span></td>
-            <td>Organizzare il team e mantenere i rapporti con il cliente in modo da <strong>integrare al meglio</strong> le modifiche.</td>
         </tr>
         <tr>
             <td><strong>Cliente non disponibile</strong></td>

@@ -3,6 +3,7 @@
 </p>
 
 # Conditions of Satisfaction
+- il sistema deve gestire documenti compilati a **mano o digitalmente**
 - il sistema deve poter ricevere in ingresso non solo **PDF**, ma anche **jpg, png e tiff**
 - il sistema, in fase di sviluppo, deve raggiungere almeno il **98% di accuratezza complessiva** nell'estrazione dei metadati. Nel caso questa non potesse essere raggiunta _Specifici_ è disposta ad accettare un **97%**
 - il sistema non deve accettare per l'elaborazione file che contengono un'immagine con **qualità troppo bassa**
